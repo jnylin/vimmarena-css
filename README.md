@@ -1,2 +1,2 @@
 # vimmarena-css
-The CSS for Vimmerby's Arena
+CSS för [Vimmerby biblioteks webb](http://bibliotek.vimmerby.se/)
