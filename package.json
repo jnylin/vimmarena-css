@@ -2,7 +2,7 @@
   "name": "VimmerbyCSS",
   "version": "1.0.0",
   "description": "CSS för Vimmerby biblioteks Arena",
-  "homepage": "https://github.com/jnylin/vimmarena-js",
+  "homepage": "https://github.com/jnylin/vimmarena-css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
