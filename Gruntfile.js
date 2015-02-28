@@ -5,7 +5,8 @@ module.exports = function(grunt) {
 	grunt.config.init({
 		// Metadata
 		pkg: grunt.file.readJSON('package.json'),
-		banner: '/*<%= pkg.homepage %>*/'
+		banner: '/*<%= pkg.homepage %>*/',
+		basename: "vimmerby",
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-jshint');
@@ -21,7 +22,7 @@ module.exports = function(grunt) {
 	grunt.config('sass', {
 		style: {
 			files: {
-				'css/vimmerby.css': ['sass/vimmerby.scss']
+				'css/<%= basename %>.css': ['sass/<%= basename %>.scss']
 			}
 		}
 	});
@@ -30,7 +31,7 @@ module.exports = function(grunt) {
 	grunt.config('cssmin', {
 		style: {
 			files: {
-				'css/vimmerby.min.css': ['css/vimmerby.css']
+				'css/<%= basename %>.min.css': ['css/<%= basename %>.css']
 			}
 		}
 	});
@@ -42,8 +43,8 @@ module.exports = function(grunt) {
         	stripBanners: true
       	},
 		dist: {
-			src: ['css/vimmerby.min.css'],
-			dest: 'dist/vimmerby.min.css'
+			src: ['css/<%= basename %>.min.css'],
+			dest: 'dist/<%= basename %>.min.css'
       	}
 	});
 
