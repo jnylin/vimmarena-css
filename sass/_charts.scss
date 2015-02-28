@@ -3,7 +3,7 @@
 
 	.arena-record-container.arena-library-record:before {
 		counter-increment: record;
-    	content: counter(record, decimal) ". ";
+    		content: counter(record, decimal) ". ";
 		font-size: 2em;
 		font-weight: bold;
 	}
