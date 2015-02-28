@@ -1,0 +1,27 @@
+.charts {
+	counter-reset: record;
+
+	.arena-record-container.arena-library-record:before {
+		counter-increment: record;
+    	content: counter(record, decimal) ". ";
+		font-size: 2em;
+		font-weight: bold;
+	}
+	
+	.arena-record-container.arena-library-record {
+		padding-top: 0.625em;
+		padding-left: 1.25em;
+	}
+
+	.arena-toggle-record-list {
+		display: none;
+	}
+
+	.arena-record {
+		position: relative;
+		top: -2em;
+		padding: 0 0 0 3.25em;
+	}
+
+}
+
