@@ -1,46 +1,64 @@
 'use strict';
 
 module.exports = function(grunt) {
-
-	grunt.initConfig({
+  
+	grunt.config.init({
 		// Metadata
 		pkg: grunt.file.readJSON('package.json'),
-    		banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
-			'<%= grunt.template.today("yyyy-mm-dd") %>\n' +
-			'<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
-			'* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
-			' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n'
+		banner: '/*<%= pkg.homepage %>*/'
+	});
+
+	grunt.loadNpmTasks('grunt-contrib-jshint');
+	grunt.config('jshint', {
+		files: ['Gruntfile.js'],
+		options: {
+			globalstrict: true,
+			predef: ["module"]
+		}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.config('sass', {
-		app: {
+		style: {
 			files: {
-				'tmp/vimmerby.css': ['sass/vimmerby.scss']
+				'css/vimmerby.css': ['sass/vimmerby.scss']
 			}
 		}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.config('cssmin', {
-		app: {
+		style: {
 			files: {
-				'dist/vimmerby.min.css': ['tmp/vimmerby.css']
+				'css/vimmerby.min.css': ['css/vimmerby.css']
 			}
 		}
+	});
+
+	grunt.loadNpmTasks('grunt-contrib-concat');
+	grunt.config('concat', {
+		options: {
+        	banner: '<%= banner %>',
+        	stripBanners: true
+      	},
+		dist: {
+			src: ['css/vimmerby.min.css'],
+			dest: 'dist/vimmerby.min.css'
+      	}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.config('watch', {
 		styles: {
 			files: ['sass/**/*.scss'],
-			tasks: ['sass', 'cssmin'],
+			tasks: ['sass', 'cssmin', 'concat'],
 			options: {
 				spawn: false
 			}
 		}
 	});
 
-	grunt.registerTask('build',	"Does the work", ['sass', 'cssmin']);
+	grunt.registerTask('default',
+	"Skapar en minifierad CSS-fil", ['jshint', 'sass', 'cssmin', 'concat']);
 
 };
