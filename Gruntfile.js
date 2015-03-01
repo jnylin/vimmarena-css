@@ -1,6 +1,5 @@
-'use strict';
-
 module.exports = function(grunt) {
+	'use strict';
   
 	grunt.config.init({
 		// Metadata
@@ -13,7 +12,6 @@ module.exports = function(grunt) {
 	grunt.config('jshint', {
 		files: ['Gruntfile.js'],
 		options: {
-			globalstrict: true,
 			predef: ["module"]
 		}
 	});
@@ -30,29 +28,24 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.config('cssmin', {
 		style: {
-			files: {
-				'css/<%= basename %>.min.css': ['css/<%= basename %>.css']
-			}
+			options: {
+        		banner: '<%= banner %>'
+			},
+			files: [{
+				expand: true,
+				cwd: 'css',
+				src: ['*.css', '!*.min.css'],
+				dest: 'dist',
+				ext: '.min.css'
+			}]
 		}
-	});
-
-	grunt.loadNpmTasks('grunt-contrib-concat');
-	grunt.config('concat', {
-		options: {
-        	banner: '<%= banner %>',
-        	stripBanners: true
-      	},
-		dist: {
-			src: ['css/<%= basename %>.min.css'],
-			dest: 'dist/<%= basename %>.min.css'
-      	}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.config('watch', {
 		styles: {
 			files: ['sass/**/*.scss'],
-			tasks: ['sass', 'cssmin', 'concat'],
+			tasks: ['sass', 'cssmin'],
 			options: {
 				spawn: false
 			}
@@ -60,6 +53,6 @@ module.exports = function(grunt) {
 	});
 
 	grunt.registerTask('default',
-	"Skapar en minifierad CSS-fil", ['jshint', 'sass', 'cssmin', 'concat']);
+	"Skapar en minifierad CSS-fil", ['jshint', 'sass', 'cssmin']);
 
 };
