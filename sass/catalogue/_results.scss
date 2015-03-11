@@ -64,6 +64,39 @@ div.arena-record-details {
 
 /* Flytta boktipset hit */
 
+/*************/
+/* Boktipset */
+/*************/
+.boktipset {
+	@include ul-default;
+}
+
+#comments {
+	h2 {
+		margin-bottom: 0;
+	}
+	
+	/* h3
+		margin-top: 0;
+		text-indent: 1.625em; */
+
+	
+	blockquote {
+		position: relative;
+		left: 0.75em;
+		
+		&:before {
+			content: "\201D";
+			position: absolute;
+			font-family: Georgia;
+			/*color:*/
+			font-size: 5em; /* 5x16=80 */
+			top: -0.275em;
+			left: -0.4em;			
+		}
+	}
+}
+
 /*.arena-review-left {
 	max-width: 14.2857em;
 }*/
