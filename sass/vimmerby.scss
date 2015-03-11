@@ -1,0 +1,174 @@
+﻿/******************/
+/* Grafisk profil */
+/******************/
+@import 'profile';
+
+/* Ikoner */
+$icon-book:		url('http://bibliotek.vimmerby.se/documents/58068/369458/Book.png/992cf5c8-81af-4e4d-abc3-12f8318e3d32?t=1407242157015');
+$icon-play:		url('http://bibliotek.vimmerby.se/documents/58068/369458/Media.png/ddfa21af-97a7-4bfa-805d-44305bd1d4f1?t=1407242161765');
+
+/* Diverse egenskaper */
+$text-shadow:	0 0 0.125em #222;
+
+$padding-wrapper: 1.25rem; 
+
+
+/***********************************/
+/* Allmänna element och egenskaper */
+/***********************************/
+@import 'base';
+
+/* Teckenstorlekar */
+@import 'font_sizes';
+
+/* Portletar */
+@import 'portlet';
+
+/* Knappar */
+@import 'buttons';
+
+/* Tabeller och listor */
+@import 'tables';
+
+/* Feedback */
+@import 'feedback';
+
+
+/**********/
+/* Layout */
+/**********/
+@import 'layout';
+
+/* Sidfoot */
+.footer {
+	hr {
+		background-color: $color-love;
+		width: 980px;
+		height: 1em;
+		border: 1px 0 1px 0;
+		border-style: solid;
+		border-color: black;
+		margin-top: 1em;
+		visibility: visible;
+	}
+	ul {
+		margin-top: 0;
+		list-style-type: none;
+	}
+	ul.branchOf {
+		padding-left: $padding-wrapper;
+		float: left
+	}
+	ul.about {
+		padding-right: $padding-wrapper;
+		float: right;		
+	}
+	
+	li {
+		float: left;
+		margin-right: 3px;
+	
+		/* IE8 stödjer inte ::before */
+		&:not(:first-of-type):before {
+			content: "|";
+		}
+	}
+		
+}
+
+/* Navigering */
+@import 'navigation';
+
+/* Inloggning, självregistrering och mina sidor etc. */
+@import 'self-service';
+
+/* Katalogen: sökruta, träfflista, facetter, katalogpost */
+@import 'catalogue';
+
+/* Artiklar */
+@import 'articles';
+
+#column-3 {
+	.portlet-listArticleView {
+		.arena-record-container {
+			border-left: 1px solid #cdcdcd;
+			border-bottom: 1px solid #cdcdcd;		
+		}
+		.portlet-content {
+			padding: 0;
+			background-color: transparent !important;
+		}
+	}
+}
+
+/*******************************************/
+
+/* Öppettider och kontakt */
+div[itemtype="http://schema.org/Library"] {
+	h2 {
+		margin-bottom: 0.307em;
+	}
+	
+	ul {
+		margin-top: 0;
+		font-size: 1em !important;
+	}
+	
+	p[itemprop="address"] {
+		float: right;
+	}
+	/*p[itemprop="address"], p[itemprop="email"] {
+		font-size: 0.875em;	
+	}*/
+	
+	div[itemprop="contactPoint"] {
+		float: left;
+	}
+}
+
+
+/*************/
+/* Boktipset */
+/*************/
+.boktipset {
+	@include ul-default;
+}
+
+#comments {
+	h2 {
+		margin-bottom: 0;
+	}
+	
+	/* h3
+		margin-top: 0;
+		text-indent: 1.625em; */
+
+	
+	blockquote {
+		position: relative;
+		left: 0.75em;
+		
+		&:before {
+			content: "\201D";
+			position: absolute;
+			font-family: Georgia;
+			/*color:*/
+			font-size: 5em; /* 5x16=80 */
+			top: -0.275em;
+			left: -0.4em;			
+		}
+	}
+}
+
+
+/* jPlayer */
+@import 'jplayer';
+
+/* Internet Explorer-anpassningar */
+@import 'ie';
+
+/* Utskrifter */
+@import 'print';
+
+/* Diverse fixar */
+@import 'fixes';

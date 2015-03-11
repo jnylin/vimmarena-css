@@ -1,0 +1,260 @@
+.portlet-selfRegistration {
+	border-top: 0.0625em solid $color-forrest;
+	
+	.arena-selfreg-description, .arena-selfreq-feedback, .arena-selfreq-profile  {
+		margin-bottom: 1em;
+	}
+
+}
+
+div.portlet-patronLogin {
+	/*.portlet-borderless-container {
+		.portlet-body {
+
+		}
+	}*/
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	max-height: 9.0625em;
+	width: 12.5em;
+	padding: 0.1875em 0.1875em;
+	/*overflow: hidden;*/
+	
+	background-color: #fff;
+	
+	border-style: none none solid solid;
+	border-width: 0 0 1px 1px;
+	border-color: $color-border-dark;
+	
+	border-bottom-left-radius: 0.625em;
+	
+	
+	.portlet-borderless-container {
+		margin: 0;
+	}
+
+
+	.arena-inner-header-container {
+		margin-bottom: 0;
+
+		.arena-inner-header {
+			/*display:none;*/
+			background: none !important;
+			/* background-color: #AAAA55 !important; */
+			border-bottom: none!important;
+			/*border-radius: 5px 5px 0 0;*/
+			text-transform: none!important;
+			color: #000;
+			padding: 0.125em 0;
+			
+			.arena-login-greeting, .arena-login-label {
+				color: #000 !important;
+				font-size: 1em;
+				/* float: right; */
+				padding: 0;
+			}
+			
+			.arena-logout-link {
+				float: right; 
+				padding: 0 10px 10px 30px;
+			}
+		}		
+		
+	}
+
+	.arena-inner-content-curve {
+		height: 0;
+	}	
+	
+	.arena-inner-content {
+		background: none !important;
+		/* background-image: none!important; */
+		/* background-color: #E9F0F4!important; */ /* Om det finns en bakgrund här måste border-radius sättas här */
+		
+		
+		padding: 0 !important; /* tidigare 0.125em 0 */
+
+		.arena-patron-signin {
+		
+			.arena-patron-form {
+				/* Dölj med javascript? */
+				label {
+					display: none;
+				}
+
+				.arena-patron-password {
+					width: 8em;
+					float: left;
+				
+					/*label {
+						display: none;
+					}
+					input {
+						width: 50% !important;
+						float: left;
+					}*/
+				}
+				
+				.arena-login-buttons {
+					width: 30%;
+					float: right;
+				}
+
+
+				.arena-patron-members {
+					display: none;
+				}
+
+				/*.arena-login-button {
+					float: right;
+				}*/
+			
+			}
+			
+
+		}
+		
+		
+		.arena-patron-create {
+			background-image: none!important;
+			background-color: transparent!important;
+			padding: 2px;
+			clear: both;
+		
+			a:link, a:visited, a:active {
+				color: #000000 !important;
+			}	
+		}
+		
+		
+		.arena-patron-reset-password {
+			display: none; /* Värmland har dålt den här, jag vet inte hur vi ska göra */
+		}
+
+
+
+	}
+	
+	.arena-patron-buttons {
+	   margin-bottom: 0;
+	}
+	
+	/*--User logged in--*/
+	.arena-patron-info {
+		/*background-image: none!important;
+		background-color: #E9F0F4!important;*/
+		background: none !important;
+		float: none!important;
+		width: auto;
+		padding: 0;
+
+		.arena-patron-list {
+			margin: 0;
+			padding: 0;
+			
+			ul {
+				margin: 0;
+			}
+			
+			li {
+				list-style-position: outside !important;
+			}
+			
+			a {
+				display: block;
+			}
+			
+			/*.arena-patron-loans, .arena-patron-reservations {
+				list-style-position: outside !important;
+			}*/
+		}
+		
+	}
+
+
+
+	
+	.arena-usertext {
+	   color: #AAAAAA;
+	}
+	
+
+	
+	input {
+		#passwordPlaceholder {
+			background-color: #fff!important;
+			color: #AAAAAA;
+			width: 95%;
+		}
+		
+
+		/*
+		a.arena-add-basket, a.arena-link-button, input.arena-input-submit, input.arena-input-button, input.arena-input-reset
+		*/
+	}
+	
+	/*ta bort frågetecknet som är länkat till hjälpen och bara sysn i firefox*/
+	.arena-help {
+		display: none;
+		right: 3px;
+		top: 23px;
+	}
+
+}
+
+
+/**************************************/
+/* Inköpsförslag och fjärrlåneansökan */
+/**************************************/
+/* Ändra klassbeteckning till acqSuggestionORillRequest! */
+.acqSuggestionORillRequest,.acqSuggestion {
+	iframe {
+		@include box;
+		@include box-info;
+		display: none; /* Plockas fram av javascript */
+	}
+	
+	&.portlet-externalLinks, form, iframe {
+		display: none;
+	}
+	
+}
+
+/**************************/
+/* Mina sidor: omlån m.m. */
+/**************************/
+
+.myLoans, .myReservations {
+	.arena-record-title {
+		font-size: 1.25em;
+	}
+}
+
+/* Mina lån */
+.arena-fallback-checkbox {
+	padding: 0 0 3.75em 3.75em;
+	img {
+		width: 1.25em;
+	}
+}
+
+
+/* Mina uppgifter */
+.portlet-arenaAccount {
+	.arena-profile-container {
+		padding: 0.3125em;
+		margin-bottom: 1em;
+	}
+
+	.arena-toggle-header {
+		font-size: 1em !important;
+	}
+
+	.arena-toggle-container {
+		padding: 0.3125em;
+		padding-top: 10px;
+		border-top: 0.0625em solid;
+	}
+}

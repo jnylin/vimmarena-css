@@ -1,0 +1,106 @@
+/**********************************/
+/* Internet Explorer-anpassningar */
+/**********************************/
+.ie9 {
+	#navigation {
+		/* Istället line-gradient i huvudnavigeringen */
+		ul {
+			li {
+				border-bottom: 1px solid $color-love-dark;
+			}
+		}
+	}
+}
+
+.ie9, .ie8, .ie7 {
+	.arena-book-jacket img {
+		border: 1px solid #ddd;
+	}
+}
+
+.ie8, .ie7 {
+	img {
+		width: 100%;
+	}
+	
+	.footer {
+		ul {
+			padding-left: 20px;
+		}
+	}
+	
+	div#wrapper {
+		border-left: 1px solid #ddd;
+		border-right: 1px solid #ddd;
+	}
+
+	div.banner-container div#banner .logo {
+		margin-left: 20px;
+		margin-top: 20px;		
+	}
+	
+	.headingSearchContainer {
+		font-size: 24px;
+	}
+
+
+	.externalSearchResources {
+		margin-top: 84px;
+		margin-left: 250px;
+	}
+	.targetAudience {
+		right: 225px;
+	}
+	
+	div.arena-book-jacket {
+		
+		img {
+			max-width: 90px;
+		}
+	}
+	
+	
+	
+	
+}
+
+/*--Fix for ie7--*/
+.ie7 {
+
+	#navigation {
+		li.selected {
+			/*background-image:  $nav-background-selected;*/
+			
+			a {
+				/*background-image: $nav-background-selected!important;*/
+			}
+		}
+		
+		li:hover {
+			/*background-image: $nav-background-hover!important;*/ /* Nybro-navigation */
+			/*color: #fff;*/
+		}		
+		
+		
+	}
+
+	.aui-w20 {
+		padding: 0 20px;
+	}
+
+	.aui-w60 {
+		padding: 0 10px;
+	}
+	
+	.portlet-column { 
+		display: block; 
+	} 
+
+	div.aui-w20 {	
+		width: 170px;
+	}
+
+	div.aui-w60 {	
+		width: 540px;
+	}
+}

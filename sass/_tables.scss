@@ -1,0 +1,28 @@
+thead tr {
+  background-color: #AAAA55;
+  color: white;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #e8f0f3;
+}
+
+@media (min-width: 420px) {
+
+	dl.tabularList {
+		width: 100%;
+		margin-left: 0;
+	
+		dt {
+			width: 40%;
+			float: left;
+		}
+	
+		dd {
+			width: 56%;
+			float: left;
+		}
+	}
+
+}

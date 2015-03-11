@@ -1,0 +1,72 @@
+#arena-newmod-topmenu  {
+	display: none;
+}
+
+div.banner-container{
+	background-image: none;
+	/*background-image: url("http://bibliotek.vimmerby.se/documents/58068/61883/gubbe.png/1d49796f-b26c-47b6-86b5-c13c27d8ee68?t=1394456534901"); */ /* Nybro-hjärta */
+	background-color: #fff;
+	/* background-color: #d5e0e6; */
+	background-position: right top;
+    height: 150px;
+    max-height: 150px;
+    padding: 0;
+	
+	div#banner {
+		height: 150px;
+		max-height: 150px;
+		padding: 0;
+
+		.logo {
+			margin-left: $padding-wrapper;
+			margin-top: $padding-wrapper;
+			width: 200px;
+		}	
+		
+		.site-name {
+			display: none;
+		}
+	
+	}		
+}
+
+div#content-wrapper {
+    margin: 0;
+    padding: 20px 0 0 0;
+}
+
+#layout-column_column-1 {
+	border-bottom: 1px solid #fff; /* Ifall den saknar innehåll */
+}
+
+.aui-w20{	
+	padding: 0 20px;
+}
+
+.aui-w60 {	
+	padding: 0 10px;
+}
+
+#column-1, #column-3 {
+	.arena-record-details {
+		width: auto;
+	}
+}
+
+.aui-w3-5, .aui-w60 {
+    width: 540px;
+}
+
+.aui-w1-5, .aui-w20 {
+    width: 170px;
+}
+
+.portlet-column {
+    display: block;
+    float: left;
+}
+
+.columns-max #column-1 {
+    padding: 0 2%;
+    width: 96%;
+}

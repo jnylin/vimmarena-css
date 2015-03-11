@@ -1,0 +1,154 @@
+/***********/
+/* Diverse */
+/***********/
+
+/* Login-portleten */
+/*--User not logged in--*/
+/*--Hide flickering of login when updating page and logged in to Liferay--*/
+html.js body.controls-visible div#main-content.columns-max div.portlet-patronLogin 
+{   display: block;
+    margin: auto; 
+}
+
+
+
+/*-Fix for top list portlet-*/
+#layout-column_column-1, #layout-column_column-3 {
+	.portlet-toplist {
+		.arena-book-jacket img {
+			width: 50px;
+		}
+		.arena-record-details {
+			width: 67%;
+			max-width: 67%;
+		}
+		.arena-record-rating img {
+			margin: 0 -2px 0 0;
+		}
+	}
+}
+
+/* Liferay article toolbar fix for 2.6 */
+.article-toolbar button {
+	color: #333 !important;
+}
+
+.portlet-boundary:hover .portlet-topper-toolbar {
+	opacity: 1;
+	background-color: rgba(51, 51, 51, 0.6);
+}
+
+.portlet-topper-toolbar span {
+	height: 16px;
+    width: 16px;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block;
+    margin: 3px 1px 0 1px;
+}
+
+.portlet-topper-toolbar a {
+    height: 16px;
+    width: 16px;
+    overflow: hidden;
+    color: #fff;
+}
+
+.portlet-topper-toolbar a img {
+	padding: 0;
+	height: 16px;
+    width: 16px;
+}
+
+.portlet-topper-toolbar {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+    opacity: 0.3;
+    background-color: transparent;
+    color: #fff;
+    z-index: 200;
+    width: 100px;
+    -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.taglib-header .header-back-to a {
+    margin-top: 15px;
+}
+
+.portlet-borderless-bar .portlet-actions {
+    float: none;
+}
+
+div.portlet-patronLogin div.portlet-borderless-bar ul li {
+    list-style-type: none;
+}
+
+.portlet-borderless-bar {
+    background-color: #333;
+    min-height: 20px;
+    margin-bottom: 5px;
+    opacity: 0.3;
+    position: relative;
+    right: 0;
+    top: 0;
+    z-index: 200;
+    -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.portlet-borderless-bar .portlet-actions {
+    margin-right: 0;
+}
+
+.lfr-component li img, 
+img.icon {
+    vertical-align: baseline;
+}
+
+.lfr-actions.portlet-options .lfr-trigger strong a {
+    background-position: 0 -1px;
+}
+
+.portlet-topper-toolbar .portlet-close.portlet-close-icon {
+    margin-right: 5px;
+}
+
+div.portlet-topper-toolbar a,
+div.portlet-borderless-bar a,
+div.portlet-language a {
+    text-decoration: none;
+}
+
+.js .page-maximized .portlet-topper-toolbar,
+.js .page-maximized .portlet-boundary:hover .portlet-topper-toolbar {
+	opacity: 1;
+	background-color: #333;
+	color: #fff;
+	width: auto;
+	min-height: 20px;
+}
+
+.portlet-title-text {
+    cursor: default;
+}
+
+.portlet-draggable {
+	.portlet-title-text {
+		cursor: move;
+	}
+}

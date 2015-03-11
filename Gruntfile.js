@@ -45,12 +45,14 @@ module.exports = function(grunt) {
 	grunt.config('watch', {
 		styles: {
 			files: ['sass/**/*.scss'],
-			tasks: ['sass', 'cssmin'],
+			tasks: ['sass'],
 			options: {
 				spawn: false
 			}
 		}
 	});
+	
+	grunt.loadNpmTasks('grunt-debug-task');
 
 	grunt.registerTask('default',
 	"Skapar en minifierad CSS-fil", ['jshint', 'sass', 'cssmin']);

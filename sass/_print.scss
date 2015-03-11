@@ -1,0 +1,50 @@
+@media print {
+
+	@page {
+		margin: 1cm;
+	}
+	
+	/* Dölj allt utom huvudinnehållet */
+	.banner-container, .navmodern, #column-1, #column-3, #row-2 {
+		display: none;
+	}
+	
+	#wrapper {
+		box-shadow: none !important; /* Egentligen skulle allt annat ligga i @media screen,
+										men eftersom vi inte har tillgång till temat ... */
+		width: 100% !important;
+	}
+	
+	/* Låt huvudinnehållet fylla pappret */
+	#column-2 {
+		width: 100%;
+		border: 1px dashed;
+	}
+	
+	
+
+	.portlet-boundary, .arena-record-container {
+		border: 1px dashed;
+	}
+
+	/* Bara relevant information om mina lån */
+	#portlet_loansWicket_WAR_arenaportlets {
+		position: absolute;
+		top: 0;
+		
+		.portlet-topper, .arena-header-container, .arena-select-item, .arena-record-left, .arena-addthis-bottom {
+			display: none;
+		}
+		
+		/* Göm/visa 
+			arena-media-class-icon
+		*/
+		.arena-media-class-icon {
+		}
+		
+		div.arena-loan-details {
+			margin-top: -3.5em;
+		}
+	}
+
+}

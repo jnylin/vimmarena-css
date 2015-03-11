@@ -1,0 +1,87 @@
+@mixin img-article-image {
+	border: 0.0625em solid black;
+	box-shadow: 0.1875em 0.1875em 0.625em #888;
+}
+
+#column-2 {
+	.arena-article {
+		a {
+			text-decoration: none;
+			font-weight: 600;			
+		}
+		a:link {
+			color:#28697D;
+		}	
+		a:visited {
+			color: #993300;
+		}
+	}
+	
+	.arena-articledet-body {
+		&> ul li {
+			list-style: disc inside none;
+		}
+		
+		ul.eventDetails li{
+			list-style: none outside none !important;
+		}
+		
+		img {
+			@include img-article-image;
+		}
+		
+	}
+	
+	/* Liferay-artiklar */
+	.journal-content-article {
+		ul:not(.feedbackPanel) {
+			@include ul-default-inside;
+		}
+		
+		img.fullSize {
+			@include img-article-image;
+		}
+		
+		iframe {
+			width: 100%;
+		}
+		
+		ul.commonSearches { 
+			text-indent: 0;
+			padding-left: 0;
+			
+			& > li {
+				width: 33%;
+				float: left;
+			}
+		}
+		
+	}
+	
+	/* Gemensamt */
+	.imgContainer {
+		font-size: 0.75em;
+	}
+	
+	.imgContainer.fullSize 
+	
+	ol {
+		margin-left: 2em !important;
+		margin-right: 2em !important;		
+		font-size: 1em;
+		
+		li {
+			list-style-type: decimal;
+			margin-bottom: 0.5em;
+		}
+	}
+	
+	section {
+		margin-bottom: 3em;
+	}
+	
+	td {
+		padding: 0.1875em 0.375em 0.1875em 0.1875em;
+	}
+
+}

@@ -1,0 +1,67 @@
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: $font-stack;
+	font-size: 100%;
+	line-height: 1.25;
+
+	background-color: #fff;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+@mixin body-background-image {
+	background-image: url("http://bibliotek.vimmerby.se/documents/58068/61883/gubbe.png/1d49796f-b26c-47b6-86b5-c13c27d8ee68?t=1394456534901");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+@media all and (min-width: 980px) and (max-width: 1400px) {
+	body {
+		@include body-background-image;
+		background-position: right center;
+	}
+};
+
+@media all and (min-width: 1401px) {
+	body {
+		@include body-background-image;
+		background-position: 90% center;
+	}
+};
+
+div#wrapper 
+{	margin: 0 auto;	
+	position: relative;
+	width: 980px;
+}
+
+img, iframe {
+	max-width: 100%;
+}
+
+hr {
+	clear: both;
+	visibility: hidden;
+}
+
+@mixin ul-default-inside {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 1em;
+	text-indent: -1em;
+	
+	li:before {
+		content: "\0BB \020";
+	}
+}
+
+@mixin ul-default {
+	ul {
+		@include ul-default-inside;
+	}
+}

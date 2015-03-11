@@ -1,0 +1,50 @@
+/* Teckenstorlekar */
+/* Moduler med rem, komponenter med em. */
+#banner-container, #navmodern, #column-1, #column-2, #column-3 {
+	font-size: 1rem;
+}
+
+/* Börja med att omdefiniera det som finns i arena-default.css */
+div.arena-record-title, div.portlet-queryRecordSearchResult li.feedbackPanelINFO {
+	font-size: 1em;
+}
+
+h1, .arena-article .arena-articledet-title{
+	font-size: 2em; /* 16x2=32 */
+}
+
+h2 {
+	font-size: 1.625em; /* 16x1.625=26 */
+}
+
+.portlet-body {
+	h1:first-of-type { margin-top: 0; }
+	h2:first-of-type { margin-top: 0; }
+}
+
+/* 	16x1.125=18 */
+div.portlet-queryRecordSearchResult {
+	div.arena-record-title span, li.feedbackPanelINFO {
+		font-size: 1.125em;
+	}
+}
+
+h3, .portlet-title-text, .arena-record .arena-articledet-title, .arena-record .arena-articledet-description h2, #column-2 p {
+	font-size: 1em; /* 16 */
+}
+
+
+/* 16x.875=14 */
+h4, p, ul, .arena-library-record span, .arena-articledet-content-group, .arena-articledet-subject, div.arena-field-subtitle, #extRes, .arena-reviews-container {
+	font-size: 0.875em;
+}
+
+.arena-record-language span {
+	font-size: 0.875rem
+}
+
+.portlet-patronLogin {
+	label, input, a {
+		font-size: 0.875em;
+	}
+}

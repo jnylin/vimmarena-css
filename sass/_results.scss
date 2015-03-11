@@ -1,0 +1,120 @@
+/* Katalogpostsidan */
+div.arena-detail-title {
+	font-size: 1.375em !important;
+}
+
+.arena-detail-left {
+	width: 47% !important;
+	font-size: 0.875em;
+}
+
+div.arena-record-details {
+	width: 70% !important;
+}
+
+/* Tydligare reservation */
+.arena-detail-reserve {
+}
+
+.arena-summaryLoans {
+	padding: 0.625em 0 !important;
+	width: 100% !important;
+}
+
+.arena-other-records {
+	img {
+		@include img-mediaLabel;
+		border-color: grey;
+		height: 1.25em;		
+	}
+}
+
+/* Mervärden */
+#extRes {
+	clear: left;
+	max-width: 65%;
+	padding: 1em 0 1em 0;
+	
+	a {
+		display: inline-block;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		margin: 0.625em;
+		text-align: center;
+	}
+	
+	a:first-of-type {
+		margin-left: 0;
+	}
+	
+	.provlasSmakprov, .btnRead {
+		background-image: $icon-book;
+		height: 4.375em;
+		line-height: 8.4375em;	
+	}
+
+	.btnPlay {
+		background-image: $icon-play;
+		height: 3em;
+		line-height: 6.875em;
+	}
+	
+}
+
+/*.arena-review-left {
+	max-width: 14.2857em;
+}*/
+
+
+/* Bestånd */
+div.portlet-catalogueDetail {
+
+	div.arena-holding-container { 
+		display: none; 
+	}
+	
+	div.arena-holding-child-container {
+		div.arena-holding-container { 
+			display: block; 
+		}
+	}
+
+}
+
+/* 	Särskilda medietyper: katalogportleten har CSS-klass 
+	motsvarande sessionsvariabeln mediaClass (sätts med javascript) */
+.arena-sessionVariables {
+	display: none;
+}
+
+/* E-böcker */
+a.arena-ehub[title~="HTML5"] {
+	display: none !important;
+}
+
+.eBook {
+	.arena-summaryLoans {
+		display: none;
+	}
+
+	.arena-availability {
+		display: none;
+	}
+
+	.arena-detail-emedia {
+		background-color: #f2f2f2;
+		border: 0.0625em solid grey;
+		box-shadow: 0.25em 0.25em 0.25em #888;
+		margin: 1em 0 1em 0;
+		padding: 0.25em;
+	}
+}
+
+/* DVD */
+.dvd {
+	.btnPlay {
+		position: absolute;
+		top: 18em;
+	}
+}

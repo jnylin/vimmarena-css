@@ -1,0 +1,179 @@
+.listWithDescription {
+	.arena-record-description {
+		font-size: 0.875em;
+		position: absolute;
+		right: 0;
+		top: -0.2857em;
+		width: 40%;
+	}
+}
+
+.portlet-listArticleView, .portlet-listRecordSearchResult {
+	.arena-header-container {
+		display: none;
+	}
+}
+
+/* Arena-artiklar */
+.horizontalArticleList {
+
+	/*.arena-header-container {
+		display: none;
+	}*/
+
+	.portlet-listArticleView {
+		text-align: justify;
+	}
+
+	.arena-record-container {
+		width: 150px;
+		display: inline-block;
+		margin: 0.1875em 0.1875em 0.4375em;
+		vertical-align: top;
+		text-align: left;
+		box-shadow: 0 0 0.3125em #888;
+	}
+
+}
+
+/*.asideList {
+	.arena-header-container {
+		display: none;
+	}
+}*/
+
+.asideArticleList {
+	.hideFromEventList {
+		display: none;
+	}
+}
+
+/* Media */
+div.portlet-listRecordSearchResult {
+	.arena-record-details {
+		width: 100% !important;
+
+		.arena-record-title {
+			-moz-hyphens: auto;
+			hyphens: auto;
+			width: 110%
+		}		
+				
+		.arena-record-author {
+			.arena-field {
+				display: none;
+			}
+			
+			font-size: 0.875em;
+			width: 120%;
+		}
+		
+	}
+}
+
+.horizontalMediaList{
+
+	/*.arena-header-container {
+		display: none;
+	}*/
+
+	.arena-record-container {
+		padding: 0;
+		width: 7.5em;
+		height: 13.75em;
+		float:left;
+		border: none;
+		margin: 0 0 0.625em 0.625em;
+		background-color: transparent;
+	}
+	
+	div.arena-book-jacket {
+		margin: 0;
+		
+		img {
+			width: 90px;
+			height: 130px;
+		}
+	}
+
+}
+
+.horizontalMediaList.cdBook {
+
+	.arena-record-container {
+		height: 10.625em;
+
+		img {
+			height: 85px;
+		}
+
+	}
+
+}
+
+.journalList {
+	.arena-record-container.arena-library-record {
+		padding: 0 !important;
+	
+		.arena-record {
+			padding: 0 !important;
+		}
+		
+		/* arena-record-details */
+		.arena-record-tags {
+			display: none;
+		}
+		
+		.arena-record-button {
+			display: none;
+		}	
+	}
+
+}
+
+.charts {
+	@extend .listWithDescription;
+	
+	counter-reset: record;
+
+	.arena-record-container.arena-library-record:before {
+		counter-increment: record;
+		content: counter(record, decimal) ". ";
+		font-size: 2em;
+		font-weight: bold;
+	}
+	
+	.arena-record-container.arena-library-record {
+		padding-top: 0.625em;
+		padding-left: 1.25em;
+	}
+
+	.arena-toggle-record-list {
+		display: none;
+	}
+
+	.arena-record {
+		position: relative;
+		top: -1.9375em;
+		padding: 0 0 0 3.25em;
+	}
+
+	.arena-record-cover {
+		ul.values {
+			top: 4em;
+		}
+	}
+
+	.arena-record-year {
+		font-size: 0.875em;
+		margin-top: 1em;
+
+		.arena-field {
+			display: none;
+		}
+	}
+}
+
+.prize {
+	@extend .listWithDescription;
+}

@@ -1,0 +1,59 @@
+@mixin box {
+	border: 0.0625em solid;
+	margin: 1em 0;
+	padding: 1em 1.125em 1em 1.125em;
+	/*background-repeat: no-repeat;
+	background-position: 10px center;*/
+}
+
+@mixin box-warning {
+	color: $color-sun-dark;
+	background-color: $color-sun-light; /* ljus gul */
+}
+
+@mixin box-info {
+	color: $color-water-dark;
+	background-color: $color-water-light;
+}
+
+@mixin box-error {
+	color: $color-love;
+	background-color: $color-love-very-light;
+}
+
+/* Feedback */
+/* Information (blå), success (grön), warning (gul), error (rör */
+
+/* TODO: Ta bort listdekorationen vid inköpsförslag */
+ul.feedbackPanel {
+	font-size: 1.125em;
+	text-indent: 0;
+	list-style: none;
+	
+	li:before {
+		content: "";
+	}
+}
+
+/* Information (blå) */
+li.feedbackPanelINFO {
+	@include box;
+	@include box-info;
+}
+
+/* Varning (gul) */
+.arena-selfreg-feedback {
+	@include box;
+	@include box-warning;
+}
+
+/* Fel (röd) */
+li.feedbackPanelERROR, .arena-internal-error-title, .arena-internal-error-description, .arena-internal-error-link {
+	@include box;
+	@include box-error;
+
+}
+
+
+
+/*ul.feedbackPanel li.feedbackPanelERROR span.feedbackPanelERROR */

@@ -1,0 +1,78 @@
+.portlet {
+	border: none !important; /* important, eftersom den finns def i Axiells tema */
+	margin: 0;
+	padding: 0;
+}
+
+div.portlet-topper {
+	background-color: $color-love !important;
+	border-radius: 0.3125em 0.3125em 0 0;
+	/*border-top: 0.0625em solid black;
+	border-left: 0.0625em solid black;
+	border-right: 0.0625em solid black;*/
+
+	/* .portlet-title */
+	.portlet-title-text {
+		color: $color-txt-light;
+		text-shadow: $text-shadow;	
+		font-weight: 700;
+	}
+	
+}
+
+#column-2 .portlet-topper {
+	background-color: $color-forrest !important;
+
+	/* .portlet-title */	
+	.portlet-title-text {
+		color: $color-txt-light;
+	}
+}
+
+.arena-header {
+}
+
+.arena-top-text {
+	padding: 0 !important;
+}
+
+.portlet-content {
+	background-color: $color-bg-dark !important;
+	padding: 5px 10px;
+}
+
+.portlet-boundary {
+	clear: both;
+}
+
+.portlet-borderless-container 
+{   position: static;
+}
+.signed-in .portlet-borderless-container 
+{   position: relative;
+}
+
+
+
+.js .delete-tab
+{	display: none;
+}
+
+.portlet-column-content {
+	padding: 0;
+}
+
+.signed-in {
+	.portlet-column-content {
+		padding-bottom: 5px;
+	}
+	.portlet-column-content.empty {
+		padding: 20px 0 !important;
+		height: auto !important;
+	}
+	
+}
+
+div.portlet-borderless-bar span, div.portlet-borderless-bar a 
+{   color: #fff !important;
+}

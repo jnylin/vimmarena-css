@@ -1,0 +1,58 @@
+@mixin img-mediaLabel {
+		border-width: 0.1em;
+		border-style: solid;
+		border-radius: 0.3125em;
+		padding: 0.1875em !important;
+		background-color: #fff;
+}
+div.arena-record-navigation
+{	float: none;
+}
+
+div.arena-book-jacket img {
+    background-color: #FFFFFF;
+    -webkit-box-shadow:  1px 1px 3px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow:  1px 1px 3px 1px rgba(0,0,0,0.3);
+	box-shadow:  1px 1px 3px 1px rgba(0,0,0,0.3);
+    background-size: auto 100%;
+}
+
+.arena-media-class-icon {
+	@include img-mediaLabel;
+	border-color: $color-forrest;
+	float: right;
+	height: 1.5em;
+}
+
+.arena-review {
+  display: none;
+}
+
+/* Dynamiska listor och träfflistor */
+.arena-record-cover, .arena-detail-cover {
+	ul.values {
+		list-style-type: none;
+		position: absolute;
+		margin: 0;
+		padding: 0;
+		top: 7.143em;
+		left: -1em;
+		
+		li {
+			background-color: white;
+			border: 0.08em solid $color-love;
+			border-radius: 0.283em;
+			padding: 0.143em;
+			margin-bottom: 0.143em;
+		}
+	}
+}
+
+/* Sökning (även databaser) och träfflistan */
+@import 'search';
+
+/* Katalogposten */
+@import 'results';
+
+/* Dynamiska listor */
+@import 'dynamicLists';
