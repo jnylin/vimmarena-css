@@ -27,18 +27,13 @@ module.exports = function(grunt) {
 
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.config('cssmin', {
-		style: {
-			options: {
-        		banner: '<%= banner %>'
-			},
-			target: {
-				files: [{
-					expand: true,
-					cwd: 'css',
-					src: ['*.css', '!*.min.css'],
-					dest: 'dist',
-					ext: '.min.css'
-				}]
+		options: {
+			shorthandCompacting: false,
+			rountPrecision: -1
+		},
+		target: {
+			files: {
+				'dist/<%= basename %>.min.css': ['css/<%= basename %>.css']
 			}
 		}
 	});
