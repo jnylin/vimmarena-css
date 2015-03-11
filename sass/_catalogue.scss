@@ -49,10 +49,10 @@ div.arena-book-jacket img {
 }
 
 /* Sökning (även databaser) och träfflistan */
-@import 'search';
+@import 'catalogue/search';
 
 /* Katalogposten */
-@import 'results';
+@import 'catalogue/results';
 
 /* Dynamiska listor */
-@import 'dynamicLists';
+@import 'catalogue/dynamicLists';

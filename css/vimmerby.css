@@ -1,0 +1,1757 @@
+@charset "UTF-8";
+/******************/
+/* Grafisk profil */
+/******************/
+/******************/
+/* Grafisk profil */
+/******************/
+/* Färger */
+/* Övriga färger */
+/* Ikoner */
+/* Diverse egenskaper */
+/***********************************/
+/* Allmänna element och egenskaper */
+/***********************************/
+html {
+  font-size: 16px; }
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.25;
+  background-color: #fff; }
+
+.hidden {
+  visibility: hidden; }
+
+@media all and (min-width: 980px) and (max-width: 1400px) {
+  body {
+    background-image: url("http://bibliotek.vimmerby.se/documents/58068/61883/gubbe.png/1d49796f-b26c-47b6-86b5-c13c27d8ee68?t=1394456534901");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right center; } }
+@media all and (min-width: 1401px) {
+  body {
+    background-image: url("http://bibliotek.vimmerby.se/documents/58068/61883/gubbe.png/1d49796f-b26c-47b6-86b5-c13c27d8ee68?t=1394456534901");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 90% center; } }
+div#wrapper {
+  margin: 0 auto;
+  position: relative;
+  width: 980px; }
+
+img, iframe {
+  max-width: 100%; }
+
+hr {
+  clear: both;
+  visibility: hidden; }
+
+/* Teckenstorlekar */
+/* Teckenstorlekar */
+/* Moduler med rem, komponenter med em. */
+#banner-container, #navmodern, #column-1, #column-2, #column-3 {
+  font-size: 1rem; }
+
+/* Börja med att omdefiniera det som finns i arena-default.css */
+div.arena-record-title, div.portlet-queryRecordSearchResult li.feedbackPanelINFO {
+  font-size: 1em; }
+
+h1, .arena-article .arena-articledet-title {
+  font-size: 2em;
+  /* 16x2=32 */ }
+
+h2 {
+  font-size: 1.625em;
+  /* 16x1.625=26 */ }
+
+.portlet-body h1:first-of-type {
+  margin-top: 0; }
+.portlet-body h2:first-of-type {
+  margin-top: 0; }
+
+/* 	16x1.125=18 */
+div.portlet-queryRecordSearchResult div.arena-record-title span, div.portlet-queryRecordSearchResult li.feedbackPanelINFO {
+  font-size: 1.125em; }
+
+h3, .portlet-title-text, .arena-record .arena-articledet-title, .arena-record .arena-articledet-description h2, #column-2 p {
+  font-size: 1em;
+  /* 16 */ }
+
+/* 16x.875=14 */
+h4, p, ul, .arena-library-record span, .arena-articledet-content-group, .arena-articledet-subject, div.arena-field-subtitle, #extRes, .arena-reviews-container {
+  font-size: 0.875em; }
+
+.arena-record-language span {
+  font-size: 0.875rem; }
+
+.portlet-patronLogin label, .portlet-patronLogin input, .portlet-patronLogin a {
+  font-size: 0.875em; }
+
+/* Portletar */
+.portlet {
+  border: none !important;
+  /* important, eftersom den finns def i Axiells tema */
+  margin: 0;
+  padding: 0; }
+
+div.portlet-topper {
+  background-color: #b20f0a !important;
+  border-radius: 0.3125em 0.3125em 0 0;
+  /*border-top: 0.0625em solid black;
+  border-left: 0.0625em solid black;
+  border-right: 0.0625em solid black;*/
+  /* .portlet-title */ }
+  div.portlet-topper .portlet-title-text {
+    color: #FFF;
+    text-shadow: 0 0 0.125em #222;
+    font-weight: 700; }
+
+#column-2 .portlet-topper {
+  background-color: #006935 !important;
+  /* .portlet-title */ }
+  #column-2 .portlet-topper .portlet-title-text {
+    color: #FFF; }
+
+.arena-top-text {
+  padding: 0 !important; }
+
+.portlet-content {
+  background-color: #E9F0F4 !important;
+  padding: 5px 10px; }
+
+.portlet-boundary {
+  clear: both; }
+
+.portlet-borderless-container {
+  position: static; }
+
+.signed-in .portlet-borderless-container {
+  position: relative; }
+
+.js .delete-tab {
+  display: none; }
+
+.portlet-column-content {
+  padding: 0; }
+
+.signed-in .portlet-column-content {
+  padding-bottom: 5px; }
+.signed-in .portlet-column-content.empty {
+  padding: 20px 0 !important;
+  height: auto !important; }
+
+div.portlet-borderless-bar span, div.portlet-borderless-bar a {
+  color: #fff !important; }
+
+/* Knappar */
+a.arena-link-button:link, a.arena-link-button a.arena-add-basket {
+  background-image: none !important;
+  background: linear-gradient(to bottom, transparent 70%, rgba(0, 0, 0, 0.15) 100%) repeat scroll 0 0 transparent !important;
+  background-color: #b20f0a !important;
+  box-shadow: 1px 1px 1px #6f0909 !important;
+  text-shadow: 0 0 0.125em #222; }
+  a.arena-link-button:link:hover, a.arena-link-button a.arena-add-basket:hover {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.15) 100%, transparent 70%) repeat scroll 0 0 transparent !important;
+    background-color: #b20f0a !important;
+    box-shadow: 1px 1px 1px #222 !important; }
+
+a.arena-add-basket,
+a.arena-link-button,
+input.arena-input-submit,
+input.arena-input-button,
+input.arena-input-reset {
+  background-image: none !important;
+  background-color: #b20f0a;
+  border: 0; }
+
+span.arena-notavailable,
+span.arena-available,
+span.availableForLoan {
+  /* font-family: Arial!important; */ }
+
+div.arena-record-availability a:link, div.arena-record-availability a:hover, div.arena-record-availability a:visited, div.arena-record-availability a:active {
+  text-decoration: none; }
+
+/* Tabeller och listor */
+thead tr {
+  background-color: #AAAA55;
+  color: white;
+  font-weight: bold; }
+
+tr:nth-child(even) {
+  background-color: #e8f0f3; }
+
+@media (min-width: 420px) {
+  dl.tabularList {
+    width: 100%;
+    margin-left: 0; }
+    dl.tabularList dt {
+      width: 40%;
+      float: left; }
+    dl.tabularList dd {
+      width: 56%;
+      float: left; } }
+/* Feedback */
+/* Feedback */
+/* Information (blå), success (grön), warning (gul), error (rör */
+/* TODO: Ta bort listdekorationen vid inköpsförslag */
+ul.feedbackPanel {
+  font-size: 1.125em;
+  text-indent: 0;
+  list-style: none; }
+  ul.feedbackPanel li:before {
+    content: ""; }
+
+/* Information (blå) */
+li.feedbackPanelINFO {
+  border: 0.0625em solid;
+  margin: 1em 0;
+  padding: 1em 1.125em 1em 1.125em;
+  /*background-repeat: no-repeat;
+  background-position: 10px center;*/
+  color: #00416a;
+  background-color: #d1edff; }
+
+/* Varning (gul) */
+.arena-selfreg-feedback {
+  border: 0.0625em solid;
+  margin: 1em 0;
+  padding: 1em 1.125em 1em 1.125em;
+  /*background-repeat: no-repeat;
+  background-position: 10px center;*/
+  color: #9F6000;
+  background-color: #FEEFB3;
+  /* ljus gul */ }
+
+/* Fel (röd) */
+li.feedbackPanelERROR, .arena-internal-error-title, .arena-internal-error-description, .arena-internal-error-link {
+  border: 0.0625em solid;
+  margin: 1em 0;
+  padding: 1em 1.125em 1em 1.125em;
+  /*background-repeat: no-repeat;
+  background-position: 10px center;*/
+  color: #b20f0a;
+  background-color: #ffdede; }
+
+/*ul.feedbackPanel li.feedbackPanelERROR span.feedbackPanelERROR */
+/**********/
+/* Layout */
+/**********/
+#arena-newmod-topmenu {
+  display: none; }
+
+div.banner-container {
+  background-image: none;
+  /*background-image: url("http://bibliotek.vimmerby.se/documents/58068/61883/gubbe.png/1d49796f-b26c-47b6-86b5-c13c27d8ee68?t=1394456534901"); */
+  /* Nybro-hjärta */
+  background-color: #fff;
+  /* background-color: #d5e0e6; */
+  background-position: right top;
+  height: 150px;
+  max-height: 150px;
+  padding: 0; }
+  div.banner-container div#banner {
+    height: 150px;
+    max-height: 150px;
+    padding: 0; }
+    div.banner-container div#banner .logo {
+      margin-left: 1.25rem;
+      margin-top: 1.25rem;
+      width: 200px; }
+    div.banner-container div#banner .site-name {
+      display: none; }
+
+div#content-wrapper {
+  margin: 0;
+  padding: 20px 0 0 0; }
+
+#layout-column_column-1 {
+  border-bottom: 1px solid #fff;
+  /* Ifall den saknar innehåll */ }
+
+.aui-w20 {
+  padding: 0 20px; }
+
+.aui-w60 {
+  padding: 0 10px; }
+
+#column-1 .arena-record-details, #column-3 .arena-record-details {
+  width: auto; }
+
+.aui-w3-5, .aui-w60 {
+  width: 540px; }
+
+.aui-w1-5, .aui-w20 {
+  width: 170px; }
+
+.portlet-column {
+  display: block;
+  float: left; }
+
+.columns-max #column-1 {
+  padding: 0 2%;
+  width: 96%; }
+
+/* Sidfoot */
+.footer hr {
+  background-color: #b20f0a;
+  width: 980px;
+  height: 1em;
+  border: 1px 0 1px 0;
+  border-style: solid;
+  border-color: black;
+  margin-top: 1em;
+  visibility: visible; }
+.footer ul {
+  margin-top: 0;
+  list-style-type: none; }
+.footer ul.branchOf {
+  padding-left: 1.25rem;
+  float: left; }
+.footer ul.about {
+  padding-right: 1.25rem;
+  float: right; }
+.footer li {
+  float: left;
+  margin-right: 3px;
+  /* IE8 stödjer inte ::before */ }
+  .footer li:not(:first-of-type):before {
+    content: "|"; }
+
+/* Navigering */
+/*--Language portlet--*/
+div.portlet-language {
+  margin: 0;
+  right: 10px; }
+
+/*vald lÃ¤nk med vanlig stil, inte stora bokstÃ¤ver*/
+li a.open.selected, li a.open {
+  text-transform: none; }
+
+.navmodern {
+  background-color: #b20f0a;
+  background-image: none;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  -webkit-transition: all 0.14s ease-out;
+  -moz-transition: all 0.14s ease-out;
+  transition: all 0.14s ease-out;
+  padding: 0 20px; }
+  .navmodern div#navigation {
+    background-image: none; }
+    .navmodern div#navigation ul {
+      list-style: none;
+      float: left; }
+      .navmodern div#navigation ul li {
+        float: left;
+        position: relative;
+        background: linear-gradient(to bottom, transparent 70%, rgba(0, 0, 0, 0.15) 100%) repeat scroll 0 0 transparent;
+        border-left: 1px solid #e32424;
+        border-right: 1px solid #6f0909; }
+        .navmodern div#navigation ul li a {
+          background-image: none;
+          text-shadow: 0 0 0.125em #222;
+          font-size: 1em; }
+        .navmodern div#navigation ul li a:hover {
+          background-color: #fff;
+          background-image: none;
+          color: #000;
+          text-shadow: none; }
+      .navmodern div#navigation ul li.selected a {
+        background-color: #fff;
+        background-image: none;
+        color: #000;
+        text-shadow: none; }
+
+/*	nav {
+		background-color: #bb0000;
+		clear: both;
+	}
+	nav:after {
+		clear: both;
+		content: "";
+		display: table;
+	}
+
+	
+	ul {
+
+	}
+	li {
+
+
+		border-left: 1px solid #017791;
+		border-right: 1px solid #e9f3f6;
+	}
+	
+	a {
+		color: #fff;
+		display: block;
+		text-align: center;
+		padding: 8px 14px;
+		outline: medium none;
+		text-shadow: 0 0 2px #222222;
+		text-decoration: none;
+	}
+	
+	a:hover {
+
+		text-shadow: none;
+	} */
+/* Navigationsportleten */
+div.portlet-navigation {
+  /*.portlet-title {
+  	color: #FFF;
+  }*/ }
+  div.portlet-navigation .portlet-topper {
+    background-color: transparent !important;
+    /* background-color: #AAAA55 !important;*/
+    /* Finns i arenamoderntheme */ }
+  div.portlet-navigation .portlet-content, div.portlet-navigation .portlet-borderless-container {
+    background-color: transparent !important;
+    /* background-color: $color-bg-dark !important; */
+    /* Finns i arenamoderntheme */
+    padding: 0;
+    border-top: 0.125em solid black; }
+    div.portlet-navigation .portlet-content a, div.portlet-navigation .portlet-borderless-container a {
+      display: block;
+      padding: 0.625em; }
+    div.portlet-navigation .portlet-content ul, div.portlet-navigation .portlet-borderless-container ul {
+      list-style-type: none; }
+    div.portlet-navigation .portlet-content ul.level-2, div.portlet-navigation .portlet-borderless-container ul.level-2 {
+      font-size: 1em;
+      padding: 0; }
+      div.portlet-navigation .portlet-content ul.level-2 a, div.portlet-navigation .portlet-borderless-container ul.level-2 a {
+        padding-left: 0.9375em; }
+    div.portlet-navigation .portlet-content li, div.portlet-navigation .portlet-content a.open, div.portlet-navigation .portlet-borderless-container li, div.portlet-navigation .portlet-borderless-container a.open {
+      border-bottom: dotted .1em; }
+    div.portlet-navigation .portlet-content li.open, div.portlet-navigation .portlet-borderless-container li.open {
+      background-color: #E9F0F4;
+      border-bottom: none !important; }
+    div.portlet-navigation .portlet-content li.selected > a, div.portlet-navigation .portlet-borderless-container li.selected > a {
+      background-color: #EEF6F8; }
+    div.portlet-navigation .portlet-content a:hover, div.portlet-navigation .portlet-borderless-container a:hover {
+      background-color: #EEF6F8; }
+
+/* Genvägar på startsidan */
+.shortcuts .portlet-content {
+  padding-left: 0;
+  padding-right: 0; }
+.shortcuts ul {
+  list-style-type: none;
+  width: 100%; }
+.shortcuts li {
+  /* font-size: 1.25em; */
+  line-height: 2em; }
+.shortcuts a {
+  display: block;
+  padding-left: 0.625em; }
+.shortcuts a:hover {
+  background-color: #fff; }
+
+/* Målgrupper */
+.targetAudience {
+  position: absolute;
+  top: 0;
+  right: 14.0625rem; }
+  .targetAudience ul {
+    margin: 0; }
+  .targetAudience li {
+    display: inline-block; }
+  .targetAudience a {
+    display: block;
+    padding: 5px 15px 10px; }
+
+/* Sökresurser */
+.externalSearchResources {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin-top: 5.25rem;
+  margin-left: 15.625rem; }
+  .externalSearchResources ul {
+    list-style-type: none; }
+    .externalSearchResources ul li {
+      float: left;
+      margin-right: 1em; }
+  .externalSearchResources .icons-container {
+    position: absolute;
+    top: 0;
+    left: -5em; }
+
+/* Inloggning, självregistrering och mina sidor etc. */
+.portlet-selfRegistration {
+  border-top: 0.0625em solid #006935; }
+  .portlet-selfRegistration .arena-selfreg-description, .portlet-selfRegistration .arena-selfreq-feedback, .portlet-selfRegistration .arena-selfreq-profile {
+    margin-bottom: 1em; }
+
+div.portlet-patronLogin {
+  	/*.portlet-borderless-container {
+  		.portlet-body {
+  
+  		}
+  	}*/
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-height: 9.0625em;
+  width: 12.5em;
+  padding: 0.1875em 0.1875em;
+  /*overflow: hidden;*/
+  background-color: #fff;
+  border-style: none none solid solid;
+  border-width: 0 0 1px 1px;
+  border-color: #828f95;
+  border-bottom-left-radius: 0.625em;
+  /*--User logged in--*/
+  /*ta bort frågetecknet som är länkat till hjälpen och bara sysn i firefox*/ }
+  div.portlet-patronLogin .portlet-borderless-container {
+    margin: 0; }
+  div.portlet-patronLogin .arena-inner-header-container {
+    margin-bottom: 0; }
+    div.portlet-patronLogin .arena-inner-header-container .arena-inner-header {
+      /*display:none;*/
+      background: none !important;
+      /* background-color: #AAAA55 !important; */
+      border-bottom: none !important;
+      /*border-radius: 5px 5px 0 0;*/
+      text-transform: none !important;
+      color: #000;
+      padding: 0.125em 0; }
+      div.portlet-patronLogin .arena-inner-header-container .arena-inner-header .arena-login-greeting, div.portlet-patronLogin .arena-inner-header-container .arena-inner-header .arena-login-label {
+        color: #000 !important;
+        font-size: 1em;
+        /* float: right; */
+        padding: 0; }
+      div.portlet-patronLogin .arena-inner-header-container .arena-inner-header .arena-logout-link {
+        float: right;
+        padding: 0 10px 10px 30px; }
+  div.portlet-patronLogin .arena-inner-content-curve {
+    height: 0; }
+  div.portlet-patronLogin .arena-inner-content {
+    background: none !important;
+    /* background-image: none!important; */
+    /* background-color: #E9F0F4!important; */
+    /* Om det finns en bakgrund här måste border-radius sättas här */
+    padding: 0 !important;
+    /* tidigare 0.125em 0 */ }
+    div.portlet-patronLogin .arena-inner-content .arena-patron-signin .arena-patron-form {
+      /* Dölj med javascript? */
+      /*.arena-login-button {
+      	float: right;
+      }*/ }
+      div.portlet-patronLogin .arena-inner-content .arena-patron-signin .arena-patron-form label {
+        display: none; }
+      div.portlet-patronLogin .arena-inner-content .arena-patron-signin .arena-patron-form .arena-patron-password {
+        width: 8em;
+        float: left;
+        /*label {
+        	display: none;
+        }
+        input {
+        	width: 50% !important;
+        	float: left;
+        }*/ }
+      div.portlet-patronLogin .arena-inner-content .arena-patron-signin .arena-patron-form .arena-login-buttons {
+        width: 30%;
+        float: right; }
+      div.portlet-patronLogin .arena-inner-content .arena-patron-signin .arena-patron-form .arena-patron-members {
+        display: none; }
+    div.portlet-patronLogin .arena-inner-content .arena-patron-create {
+      background-image: none !important;
+      background-color: transparent !important;
+      padding: 2px;
+      clear: both; }
+      div.portlet-patronLogin .arena-inner-content .arena-patron-create a:link, div.portlet-patronLogin .arena-inner-content .arena-patron-create a:visited, div.portlet-patronLogin .arena-inner-content .arena-patron-create a:active {
+        color: #000000 !important; }
+    div.portlet-patronLogin .arena-inner-content .arena-patron-reset-password {
+      display: none;
+      /* Värmland har dålt den här, jag vet inte hur vi ska göra */ }
+  div.portlet-patronLogin .arena-patron-buttons {
+    margin-bottom: 0; }
+  div.portlet-patronLogin .arena-patron-info {
+    /*background-image: none!important;
+    background-color: #E9F0F4!important;*/
+    background: none !important;
+    float: none !important;
+    width: auto;
+    padding: 0; }
+    div.portlet-patronLogin .arena-patron-info .arena-patron-list {
+      margin: 0;
+      padding: 0;
+      /*.arena-patron-loans, .arena-patron-reservations {
+      	list-style-position: outside !important;
+      }*/ }
+      div.portlet-patronLogin .arena-patron-info .arena-patron-list ul {
+        margin: 0; }
+      div.portlet-patronLogin .arena-patron-info .arena-patron-list li {
+        list-style-position: outside !important; }
+      div.portlet-patronLogin .arena-patron-info .arena-patron-list a {
+        display: block; }
+  div.portlet-patronLogin .arena-usertext {
+    color: #AAAAAA; }
+  div.portlet-patronLogin input {
+    /*
+    a.arena-add-basket, a.arena-link-button, input.arena-input-submit, input.arena-input-button, input.arena-input-reset
+    */ }
+    div.portlet-patronLogin input #passwordPlaceholder {
+      background-color: #fff !important;
+      color: #AAAAAA;
+      width: 95%; }
+  div.portlet-patronLogin .arena-help {
+    display: none;
+    right: 3px;
+    top: 23px; }
+
+/**************************************/
+/* Inköpsförslag och fjärrlåneansökan */
+/**************************************/
+/* Ändra klassbeteckning till acqSuggestionORillRequest! */
+.acqSuggestionORillRequest iframe, .acqSuggestion iframe {
+  border: 0.0625em solid;
+  margin: 1em 0;
+  padding: 1em 1.125em 1em 1.125em;
+  /*background-repeat: no-repeat;
+  background-position: 10px center;*/
+  color: #00416a;
+  background-color: #d1edff;
+  display: none;
+  /* Plockas fram av javascript */ }
+.acqSuggestionORillRequest.portlet-externalLinks, .acqSuggestionORillRequest form, .acqSuggestionORillRequest iframe, .acqSuggestion.portlet-externalLinks, .acqSuggestion form, .acqSuggestion iframe {
+  display: none; }
+
+/**************************/
+/* Mina sidor: omlån m.m. */
+/**************************/
+.myLoans .arena-record-title, .myReservations .arena-record-title {
+  font-size: 1.25em; }
+
+/* Mina lån */
+.arena-fallback-checkbox {
+  padding: 0 0 3.75em 3.75em; }
+  .arena-fallback-checkbox img {
+    width: 1.25em; }
+
+/* Mina uppgifter */
+.portlet-arenaAccount .arena-profile-container {
+  padding: 0.3125em;
+  margin-bottom: 1em; }
+.portlet-arenaAccount .arena-toggle-header {
+  font-size: 1em !important; }
+.portlet-arenaAccount .arena-toggle-container {
+  padding: 0.3125em;
+  padding-top: 10px;
+  border-top: 0.0625em solid; }
+
+/* Katalogen: sökruta, träfflista, facetter, katalogpost */
+div.arena-record-navigation {
+  float: none; }
+
+div.arena-book-jacket img {
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.3);
+  background-size: auto 100%; }
+
+.arena-media-class-icon {
+  border-width: 0.1em;
+  border-style: solid;
+  border-radius: 0.3125em;
+  padding: 0.1875em !important;
+  background-color: #fff;
+  border-color: #006935;
+  float: right;
+  height: 1.5em; }
+
+.arena-review {
+  display: none; }
+
+/* Dynamiska listor och träfflistor */
+.arena-record-cover ul.values, .arena-detail-cover ul.values {
+  list-style-type: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 7.143em;
+  left: -1em; }
+  .arena-record-cover ul.values li, .arena-detail-cover ul.values li {
+    background-color: white;
+    border: 0.08em solid #b20f0a;
+    border-radius: 0.283em;
+    padding: 0.143em;
+    margin-bottom: 0.143em; }
+
+/* Sökning (även databaser) och träfflistan */
+/* Sökning */
+.headingSearchContainer {
+  position: absolute;
+  font-size: 1.5rem;
+  left: 11.25em;
+  /* 11.25x24=270 */
+  top: 1em;
+  /* 30px */ }
+
+div.portlet-simpleSearch {
+  background-image: none !important;
+  background-color: transparent;
+  top: 3.125em !important;
+  /* 3.125x16=50 */
+  margin-left: -13.75em !important;
+  padding: 0 !important;
+  /* 	Från main:
+  	box-shadow: 1px 1px 1px #222; */
+  /*input.arena-input-submit:hover {
+  	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+  	border-color: $color-love-dark;
+  }*/
+  /* Även definerad i arena-default */
+  /* VÄljer att inte visa, så den behöver inte definieras längre */ }
+  div.portlet-simpleSearch span.arena-search-text input[type="text"] {
+    color: #778899;
+    font-size: 1.25em; }
+  div.portlet-simpleSearch input.arena-input-text {
+    max-width: 100% !important;
+    width: 100% !important; }
+  div.portlet-simpleSearch span.arena-search-button {
+    float: right !important; }
+  div.portlet-simpleSearch input.arena-input-submit {
+    background: linear-gradient(to bottom, transparent 70%, rgba(0, 0, 0, 0.15) 100%) repeat scroll 0 0 transparent !important;
+    background-color: #b20f0a !important;
+    border: none;
+    box-shadow: 1px 1px 1px #6f0909 !important;
+    text-shadow: 0 0 0.125em #222;
+    font-size: 1.5em !important;
+    height: 2.25rem !important;
+    /* 1.5em */
+    background-image: none !important; }
+  div.portlet-simpleSearch input.arena-input-submit:hover {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.15) 100%, transparent 70%) repeat scroll 0 0 transparent !important;
+    background-color: #b20f0a !important;
+    box-shadow: 1px 1px 1px #222 !important; }
+  div.portlet-simpleSearch div.arena-extended-search-container {
+    font-size: 0.875em;
+    top: 55px;
+    left: 400px !important; }
+    div.portlet-simpleSearch div.arena-extended-search-container a.arena-extended-search-link {
+      color: #44697D;
+      /*:link, :visited, :hover, :active {			
+      }*/ }
+  div.portlet-simpleSearch input.arena-placeholder {
+    color: #AAAAAA; }
+
+/* Autocomplete */
+.wicket-aa ul {
+  font-size: 1em; }
+  .wicket-aa ul li.selected {
+    cursor: pointer !important; }
+
+/* Facetter */
+.arena-facets-down ul.arena-facet-details {
+  margin: 0;
+  /* Utnyttja maximalt med utrymme */
+  padding: 0; }
+  .arena-facets-down ul.arena-facet-details li {
+    position: relative;
+    width: 100%;
+    margin-bottom: 0.2142em; }
+    .arena-facets-down ul.arena-facet-details li a.arena-field {
+      display: block;
+      width: 80%;
+      overflow: hidden;
+      padding-bottom: 0.0714em; }
+    .arena-facets-down ul.arena-facet-details li .arena-value {
+      position: absolute;
+      right: 0.2857em;
+      top: 0; }
+.arena-facets-down .arena-field-link {
+  font-size: 0.875em; }
+
+div.portlet-queryRecordSearchResult {
+  /*.arena-review {
+  	border-bottom: none;
+  }*/
+  	/* 
+  	
+  
+  	main.css:
+  	
+  	div.portlet-queryRecordSearchResult ul.feedbackPanel
+  	margin: 0;
+  	padding: 10px 0 20px;
+  		
+  	div.portlet-queryRecordSearchResult li.feedbackPanelINFO
+  	color: #111;
+  	list-style-type: none;
+  	margin: 10px 0 0;
+  	padding: 0;	
+  	
+  	div.portlet-queryRecordSearchResult li.feedbackPanelINFO span.feedbackPanelINFO
+  	font-style: italic;
+  	width: 100%;
+  
+  
+  
+  	*/ }
+  div.portlet-queryRecordSearchResult ul.feedbackPanel {
+    font-size: 1em; }
+  div.portlet-queryRecordSearchResult li.feedbackPanelINFO {
+    /* Din sökning på ... */
+    border: 0.0625em solid;
+    margin: 1em 0;
+    padding: 1em 1.125em 1em 1.125em;
+    /*background-repeat: no-repeat;
+    background-position: 10px center;*/
+    color: #00416a;
+    background-color: #d1edff; }
+    div.portlet-queryRecordSearchResult li.feedbackPanelINFO span.feedbackPanelINFO {
+      font-style: normal; }
+  div.portlet-queryRecordSearchResult .arena-media-class-icon-container img {
+    border-width: 0.1em;
+    border-style: solid;
+    border-radius: 0.3125em;
+    padding: 0.1875em !important;
+    background-color: #fff;
+    border-color: grey;
+    height: 1.632653em;
+    vertical-align: middle; }
+
+.databases .portlet-topper, .databases .portlet-title, .databases .portlet-title-text {
+  cursor: pointer !important; }
+.databases .portlet-content {
+  display: none; }
+
+/* Katalogposten */
+/* Katalogpostsidan */
+div.arena-detail-title {
+  font-size: 1.375em !important; }
+
+.arena-detail-left {
+  width: 47% !important;
+  font-size: 0.875em; }
+
+div.arena-record-details {
+  width: 70% !important; }
+
+/* Tydligare reservation */
+.arena-summaryLoans {
+  padding: 0.625em 0 !important;
+  width: 100% !important; }
+
+.arena-other-records img {
+  border-width: 0.1em;
+  border-style: solid;
+  border-radius: 0.3125em;
+  padding: 0.1875em !important;
+  background-color: #fff;
+  border-color: grey;
+  height: 1.25em; }
+
+/* Mervärden */
+#extRes {
+  clear: left;
+  max-width: 65%;
+  padding: 1em 0 1em 0; }
+  #extRes a {
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0.625em;
+    text-align: center; }
+  #extRes a:first-of-type {
+    margin-left: 0; }
+  #extRes .provlasSmakprov, #extRes .btnRead {
+    background-image: url("http://bibliotek.vimmerby.se/documents/58068/369458/Book.png/992cf5c8-81af-4e4d-abc3-12f8318e3d32?t=1407242157015");
+    height: 4.375em;
+    line-height: 8.4375em; }
+  #extRes .btnPlay {
+    background-image: url("http://bibliotek.vimmerby.se/documents/58068/369458/Media.png/ddfa21af-97a7-4bfa-805d-44305bd1d4f1?t=1407242161765");
+    height: 3em;
+    line-height: 6.875em; }
+
+/* Flytta boktipset hit */
+/*.arena-review-left {
+	max-width: 14.2857em;
+}*/
+/* Bestånd */
+div.portlet-catalogueDetail div.arena-holding-container {
+  display: none; }
+div.portlet-catalogueDetail div.arena-holding-child-container div.arena-holding-container {
+  display: block; }
+
+/* 	Särskilda medietyper: katalogportleten har CSS-klass 
+	motsvarande sessionsvariabeln mediaClass (sätts med javascript) */
+.arena-sessionVariables {
+  display: none; }
+
+/* E-böcker */
+a.arena-ehub[title~="HTML5"] {
+  display: none !important; }
+
+.eBook .arena-summaryLoans {
+  display: none; }
+.eBook .arena-availability {
+  display: none; }
+.eBook .arena-detail-emedia {
+  background-color: #f2f2f2;
+  border: 0.0625em solid grey;
+  box-shadow: 0.25em 0.25em 0.25em #888;
+  margin: 1em 0 1em 0;
+  padding: 0.25em; }
+
+/* DVD */
+.dvd .btnPlay {
+  position: absolute;
+  top: 18em; }
+
+/* Dynamiska listor */
+.listWithDescription .arena-record-description, .charts .arena-record-description, .prize .arena-record-description {
+  font-size: 0.875em;
+  position: absolute;
+  right: 0;
+  top: -0.2857em;
+  width: 40%; }
+
+.portlet-listArticleView .arena-header-container, .portlet-listRecordSearchResult .arena-header-container {
+  display: none; }
+
+/* Arena-artiklar */
+.horizontalArticleList {
+  /*.arena-header-container {
+  	display: none;
+  }*/ }
+  .horizontalArticleList .portlet-listArticleView {
+    text-align: justify; }
+  .horizontalArticleList .arena-record-container {
+    width: 150px;
+    display: inline-block;
+    margin: 0.1875em 0.1875em 0.4375em;
+    vertical-align: top;
+    text-align: left;
+    box-shadow: 0 0 0.3125em #888; }
+
+/*.asideList {
+	.arena-header-container {
+		display: none;
+	}
+}*/
+.asideArticleList .hideFromEventList {
+  display: none; }
+
+/* Media */
+div.portlet-listRecordSearchResult .arena-record-details {
+  width: 100% !important; }
+  div.portlet-listRecordSearchResult .arena-record-details .arena-record-title {
+    -moz-hyphens: auto;
+    hyphens: auto;
+    width: 110%; }
+  div.portlet-listRecordSearchResult .arena-record-details .arena-record-author {
+    font-size: 0.875em;
+    width: 120%; }
+    div.portlet-listRecordSearchResult .arena-record-details .arena-record-author .arena-field {
+      display: none; }
+
+.horizontalMediaList {
+  /*.arena-header-container {
+  	display: none;
+  }*/ }
+  .horizontalMediaList .arena-record-container {
+    padding: 0;
+    width: 7.5em;
+    height: 13.75em;
+    float: left;
+    border: none;
+    margin: 0 0 0.625em 0.625em;
+    background-color: transparent; }
+  .horizontalMediaList div.arena-book-jacket {
+    margin: 0; }
+    .horizontalMediaList div.arena-book-jacket img {
+      width: 90px;
+      height: 130px; }
+
+.horizontalMediaList.cdBook .arena-record-container {
+  height: 10.625em; }
+  .horizontalMediaList.cdBook .arena-record-container img {
+    height: 85px; }
+
+.journalList .arena-record-container.arena-library-record {
+  padding: 0 !important;
+  /* arena-record-details */ }
+  .journalList .arena-record-container.arena-library-record .arena-record {
+    padding: 0 !important; }
+  .journalList .arena-record-container.arena-library-record .arena-record-tags {
+    display: none; }
+  .journalList .arena-record-container.arena-library-record .arena-record-button {
+    display: none; }
+
+.charts {
+  counter-reset: record; }
+  .charts .arena-record-container.arena-library-record:before {
+    counter-increment: record;
+    content: counter(record,decimal) ". ";
+    font-size: 2em;
+    font-weight: bold; }
+  .charts .arena-record-container.arena-library-record {
+    padding-top: 0.625em;
+    padding-left: 1.25em; }
+  .charts .arena-toggle-record-list {
+    display: none; }
+  .charts .arena-record {
+    position: relative;
+    top: -1.9375em;
+    padding: 0 0 0 3.25em; }
+  .charts .arena-record-cover ul.values {
+    top: 4em; }
+  .charts .arena-record-year {
+    font-size: 0.875em;
+    margin-top: 1em; }
+    .charts .arena-record-year .arena-field {
+      display: none; }
+
+/* Artiklar */
+#column-2 {
+  /* Liferay-artiklar */
+  /* Gemensamt */ }
+  #column-2 .arena-article a {
+    text-decoration: none;
+    font-weight: 600; }
+  #column-2 .arena-article a:link {
+    color: #28697D; }
+  #column-2 .arena-article a:visited {
+    color: #993300; }
+  #column-2 .arena-articledet-body > ul li {
+    list-style: disc inside none; }
+  #column-2 .arena-articledet-body ul.eventDetails li {
+    list-style: none outside none !important; }
+  #column-2 .arena-articledet-body img {
+    border: 0.0625em solid black;
+    box-shadow: 0.1875em 0.1875em 0.625em #888; }
+  #column-2 .journal-content-article ul:not(.feedbackPanel) {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1em;
+    text-indent: -1em; }
+    #column-2 .journal-content-article ul:not(.feedbackPanel) li:before {
+      content: "\0BB \020"; }
+  #column-2 .journal-content-article img.fullSize {
+    border: 0.0625em solid black;
+    box-shadow: 0.1875em 0.1875em 0.625em #888; }
+  #column-2 .journal-content-article iframe {
+    width: 100%; }
+  #column-2 .journal-content-article ul.commonSearches {
+    text-indent: 0;
+    padding-left: 0; }
+    #column-2 .journal-content-article ul.commonSearches > li {
+      width: 33%;
+      float: left; }
+  #column-2 .imgContainer {
+    font-size: 0.75em; }
+  #column-2 .imgContainer.fullSize
+  ol {
+    margin-left: 2em !important;
+    margin-right: 2em !important;
+    font-size: 1em; }
+    #column-2 .imgContainer.fullSize
+    ol li {
+      list-style-type: decimal;
+      margin-bottom: 0.5em; }
+  #column-2 section {
+    margin-bottom: 3em; }
+  #column-2 td {
+    padding: 0.1875em 0.375em 0.1875em 0.1875em; }
+
+#column-3 .portlet-listArticleView .arena-record-container {
+  border-left: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd; }
+#column-3 .portlet-listArticleView .portlet-content {
+  padding: 0;
+  background-color: transparent !important; }
+
+/*******************************************/
+/* Öppettider och kontakt */
+div[itemtype="http://schema.org/Library"] {
+  /*p[itemprop="address"], p[itemprop="email"] {
+  	font-size: 0.875em;	
+  }*/ }
+  div[itemtype="http://schema.org/Library"] h2 {
+    margin-bottom: 0.307em; }
+  div[itemtype="http://schema.org/Library"] ul {
+    margin-top: 0;
+    font-size: 1em !important; }
+  div[itemtype="http://schema.org/Library"] p[itemprop="address"] {
+    float: right; }
+  div[itemtype="http://schema.org/Library"] div[itemprop="contactPoint"] {
+    float: left; }
+
+/*************/
+/* Boktipset */
+/*************/
+.boktipset ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1em;
+  text-indent: -1em; }
+  .boktipset ul li:before {
+    content: "\0BB \020"; }
+
+#comments {
+  /* h3
+  	margin-top: 0;
+  	text-indent: 1.625em; */ }
+  #comments h2 {
+    margin-bottom: 0; }
+  #comments blockquote {
+    position: relative;
+    left: 0.75em; }
+    #comments blockquote:before {
+      content: "\201D";
+      position: absolute;
+      font-family: Georgia;
+      /*color:*/
+      font-size: 5em;
+      /* 5x16=80 */
+      top: -0.275em;
+      left: -0.4em; }
+
+/* jPlayer */
+/***********/
+/* jPlayer */
+/***********/
+div.jp-audio li:before {
+  content: normal !important; }
+
+div.jp-audio,
+div.jp-audio-stream,
+div.jp-video {
+  /* Edit the font-size to counteract inherited font sizing.
+   * Eg. 1.25em = 1 / 0.8em
+   */
+  font-size: 1.25em;
+  /* 1.25em for testing in site pages */
+  /* No parent CSS that can effect the size in the demos ZIP */
+  font-family: Verdana, Arial, sans-serif;
+  line-height: 1.6;
+  color: #666;
+  border: 1px solid #6f0909;
+  /*border:1px solid #009be3;*/
+  background-color: #eee; }
+
+div.jp-audio {
+  width: 420px; }
+
+div.jp-audio-stream {
+  width: 182px; }
+
+div.jp-interface {
+  position: relative;
+  background-color: #eee;
+  width: 100%; }
+
+div.jp-audio div.jp-type-single div.jp-interface {
+  height: 80px; }
+
+div.jp-audio div.jp-type-playlist div.jp-interface {
+  height: 80px; }
+
+div.jp-audio-stream div.jp-type-single div.jp-interface {
+  height: 80px; }
+
+/* @group CONTROLS */
+div.jp-controls-holder {
+  clear: both;
+  width: 440px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  top: -8px;
+  /* This negative value depends on the size of the text in jp-currentTime and jp-duration */ }
+
+div.jp-interface ul.jp-controls {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+
+div.jp-audio ul.jp-controls {
+  width: 380px;
+  padding: 20px 20px 0 20px; }
+
+div.jp-audio-stream ul.jp-controls {
+  width: 142px;
+  padding: 20px 20px 0 20px; }
+
+div.jp-video ul.jp-controls,
+div.jp-interface ul.jp-controls li {
+  display: inline;
+  float: left; }
+
+div.jp-interface ul.jp-controls a {
+  display: block;
+  overflow: hidden;
+  text-indent: -9999px; }
+
+a.jp-play,
+a.jp-pause {
+  width: 40px;
+  height: 40px; }
+
+a.jp-play {
+  background: url("http://bibliotek.vimmerby.se/documents/58068/61875/jplayer.blue.monday.jpg/c0035c97-0bcb-419c-9a0c-dd4f785ef891?t=1386687713900") 0 0 no-repeat; }
+
+a.jp-play:hover {
+  background: url("http://bibliotek.vimmerby.se/documents/58068/61875/jplayer.blue.monday.jpg/c0035c97-0bcb-419c-9a0c-dd4f785ef891?t=1386687713900") -41px 0 no-repeat; }
+
+a.jp-pause {
+  background: url("http://bibliotek.vimmerby.se/documents/58068/61875/jplayer.blue.monday.jpg/c0035c97-0bcb-419c-9a0c-dd4f785ef891?t=1386687713900") 0 -42px no-repeat;
+  display: none; }
+
+a.jp-pause:hover {
+  background: url("http://bibliotek.vimmerby.se/documents/58068/61875/jplayer.blue.monday.jpg/c0035c97-0bcb-419c-9a0c-dd4f785ef891?t=1386687713900") -41px -42px no-repeat; }
+
+a.jp-stop, a.jp-previous, a.jp-next {
+  width: 28px;
+  height: 28px;
+  margin-top: 6px; }
+
+a.jp-stop {
+  background: url("http://bibliotek.vimmerby.se/documents/58068/61875/jplayer.blue.monday.jpg/c0035c97-0bcb-419c-9a0c-dd4f785ef891?t=1386687713900") 0 -83px no-repeat;
+  margin-left: 10px; }
+
+a.jp-stop:hover {
+  background: url("http://bibliotek.vimmerby.se/documents/58068/61875/jplayer.blue.monday.jpg/c0035c97-0bcb-419c-9a0c-dd4f785ef891?t=1386687713900") -29px -83px no-repeat; }
+
+a.jp-previous {
+  background: url("http://bibliotek.vimmerby.se/documents/58068/61875/jplayer.blue.monday.jpg/c0035c97-0bcb-419c-9a0c-dd4f785ef891?t=1386687713900") 0 -112px no-repeat; }
+
+a.jp-previous:hover {
+  background: url("http://bibliotek.vimmerby.se/documents/58068/61875/jplayer.blue.monday.jpg/c0035c97-0bcb-419c-9a0c-dd4f785ef891?t=1386687713900") -29px -112px no-repeat; }
+
+a.jp-next {
+  background: url("http://bibliotek.vimmerby.se/documents/58068/61875/jplayer.blue.monday.jpg/c0035c97-0bcb-419c-9a0c-dd4f785ef891?t=1386687713900") 0 -141px no-repeat; }
+
+a.jp-next:hover {
+  background: url("http://bibliotek.vimmerby.se/documents/58068/61875/jplayer.blue.monday.jpg/c0035c97-0bcb-419c-9a0c-dd4f785ef891?t=1386687713900") -29px -141px no-repeat; }
+
+/* @end */
+/* @group progress bar */
+div.jp-progress {
+  overflow: hidden;
+  background-color: #ddd; }
+
+div.jp-audio div.jp-progress {
+  position: absolute;
+  top: 32px;
+  height: 15px; }
+
+div.jp-audio div.jp-type-single div.jp-progress {
+  left: 110px;
+  width: 186px; }
+
+div.jp-audio div.jp-type-playlist div.jp-progress {
+  left: 166px;
+  width: 130px; }
+
+div.jp-seek-bar {
+  background: url("http://bibliotek.vimmerby.se/documents/58068/61875/jplayer.blue.monday.jpg/c0035c97-0bcb-419c-9a0c-dd4f785ef891?t=1386687713900") 0 -202px repeat-x;
+  width: 0px;
+  height: 100%;
+  cursor: pointer; }
+
+div.jp-play-bar {
+  background: url("http://bibliotek.vimmerby.se/documents/58068/61875/jplayer.blue.monday.jpg/c0035c97-0bcb-419c-9a0c-dd4f785ef891?t=1386687713900") 0 -218px repeat-x;
+  width: 0px;
+  height: 100%; }
+
+/* The seeking class is added/removed inside jPlayer */
+div.jp-seeking-bg {
+  background: url("http://bibliotek.vimmerby.se/documents/58068/61875/jplayer.blue.monday.seeking.gif/d3e0c039-8dd3-4629-84bb-4f22ed4b718d?t=1386687716728"); }
+
+/* @end */
+/* @group volume controls */
+a.jp-mute,
+a.jp-unmute,
+a.jp-volume-max {
+  width: 18px;
+  height: 15px;
+  margin-top: 12px; }
+
+div.jp-audio div.jp-type-single a.jp-mute,
+div.jp-audio div.jp-type-single a.jp-unmute {
+  margin-left: 210px; }
+
+div.jp-audio div.jp-type-playlist a.jp-mute,
+div.jp-audio div.jp-type-playlist a.jp-unmute {
+  margin-left: 154px; }
+
+div.jp-audio-stream div.jp-type-single a.jp-mute,
+div.jp-audio-stream div.jp-type-single a.jp-unmute {
+  margin-left: 10px; }
+
+div.jp-audio a.jp-volume-max,
+div.jp-audio-stream a.jp-volume-max {
+  margin-left: 56px; }
+
+a.jp-mute {
+  background: url("http://bibliotek.vimmerby.se/documents/58068/61875/jplayer.blue.monday.jpg/c0035c97-0bcb-419c-9a0c-dd4f785ef891?t=1386687713900") 0 -170px no-repeat; }
+
+a.jp-mute:hover {
+  background: url("http://bibliotek.vimmerby.se/documents/58068/61875/jplayer.blue.monday.jpg/c0035c97-0bcb-419c-9a0c-dd4f785ef891?t=1386687713900") -19px -170px no-repeat; }
+
+a.jp-unmute {
+  background: url("http://bibliotek.vimmerby.se/documents/58068/61875/jplayer.blue.monday.jpg/c0035c97-0bcb-419c-9a0c-dd4f785ef891?t=1386687713900") -60px -170px no-repeat;
+  display: none; }
+
+a.jp-unmute:hover {
+  background: url("http://bibliotek.vimmerby.se/documents/58068/61875/jplayer.blue.monday.jpg/c0035c97-0bcb-419c-9a0c-dd4f785ef891?t=1386687713900") -79px -170px no-repeat; }
+
+a.jp-volume-max {
+  background: url("http://bibliotek.vimmerby.se/documents/58068/61875/jplayer.blue.monday.jpg/c0035c97-0bcb-419c-9a0c-dd4f785ef891?t=1386687713900") 0 -186px no-repeat; }
+
+a.jp-volume-max:hover {
+  background: url("http://bibliotek.vimmerby.se/documents/58068/61875/jplayer.blue.monday.jpg/c0035c97-0bcb-419c-9a0c-dd4f785ef891?t=1386687713900") -19px -186px no-repeat; }
+
+div.jp-volume-bar {
+  position: absolute;
+  overflow: hidden;
+  background: url("http://bibliotek.vimmerby.se/documents/58068/61875/jplayer.blue.monday.jpg/c0035c97-0bcb-419c-9a0c-dd4f785ef891?t=1386687713900") 0 -250px repeat-x;
+  width: 46px;
+  height: 5px;
+  cursor: pointer; }
+
+div.jp-audio div.jp-volume-bar {
+  top: 37px;
+  left: 330px; }
+
+div.jp-audio-stream div.jp-volume-bar {
+  top: 37px;
+  left: 92px; }
+
+div.jp-volume-bar-value {
+  background: url("http://bibliotek.vimmerby.se/documents/58068/61875/jplayer.blue.monday.jpg/c0035c97-0bcb-419c-9a0c-dd4f785ef891?t=1386687713900") 0 -256px repeat-x;
+  width: 0px;
+  height: 5px; }
+
+/* @end */
+/* @group current time and duration */
+div.jp-audio div.jp-time-holder {
+  position: absolute;
+  top: 50px; }
+
+div.jp-audio div.jp-type-single div.jp-time-holder {
+  left: 110px;
+  width: 186px; }
+
+div.jp-audio div.jp-type-playlist div.jp-time-holder {
+  left: 166px;
+  width: 130px; }
+
+div.jp-current-time,
+div.jp-duration {
+  width: 60px;
+  font-size: .64em;
+  font-style: oblique; }
+
+div.jp-current-time {
+  float: left;
+  display: inline; }
+
+div.jp-duration {
+  float: right;
+  display: inline;
+  text-align: right; }
+
+/* @end */
+/* @group playlist */
+div.jp-title {
+  font-weight: bold;
+  text-align: center; }
+
+div.jp-title,
+div.jp-playlist {
+  width: 100%;
+  background-color: #ccc;
+  border-top: 1px solid #009be3; }
+
+div.jp-type-single div.jp-title,
+div.jp-type-playlist div.jp-title,
+div.jp-type-single div.jp-playlist {
+  border-top: none; }
+
+div.jp-title ul,
+div.jp-playlist ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 20px;
+  font-size: .72em; }
+
+div.jp-title li {
+  padding: 5px 0;
+  font-weight: bold; }
+
+div.jp-playlist li {
+  padding: 5px 0 4px 20px;
+  border-bottom: 1px solid #eee; }
+
+div.jp-playlist li div {
+  display: inline; }
+
+/* Note that the first-child (IE6) and last-child (IE6/7/8) selectors do not work on IE */
+div.jp-type-playlist div.jp-playlist li:last-child {
+  padding: 5px 0 5px 20px;
+  border-bottom: none; }
+
+div.jp-type-playlist div.jp-playlist li.jp-playlist-current {
+  list-style-type: square;
+  list-style-position: inside;
+  padding-left: 7px; }
+
+div.jp-type-playlist div.jp-playlist a {
+  color: #333;
+  text-decoration: none; }
+
+div.jp-type-playlist div.jp-playlist a:hover {
+  color: #0d88c1; }
+
+div.jp-type-playlist div.jp-playlist a.jp-playlist-current {
+  color: #0d88c1; }
+
+div.jp-type-playlist div.jp-playlist a.jp-playlist-item-remove {
+  float: right;
+  display: inline;
+  text-align: right;
+  margin-right: 10px;
+  font-weight: bold;
+  color: #666; }
+
+div.jp-type-playlist div.jp-playlist a.jp-playlist-item-remove:hover {
+  color: #0d88c1; }
+
+div.jp-type-playlist div.jp-playlist span.jp-free-media {
+  float: right;
+  display: inline;
+  text-align: right;
+  margin-right: 10px; }
+
+div.jp-type-playlist div.jp-playlist span.jp-free-media a {
+  color: #666; }
+
+div.jp-type-playlist div.jp-playlist span.jp-free-media a:hover {
+  color: #0d88c1; }
+
+span.jp-artist {
+  font-size: .8em;
+  color: #666; }
+
+/* @end */
+div.jp-jplayer audio,
+div.jp-jplayer {
+  width: 0px;
+  height: 0px; }
+
+div.jp-jplayer {
+  background-color: #000000; }
+
+/* @group TOGGLES */
+/* The audio toggles are nested inside jp-time-holder */
+ul.jp-toggles {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  overflow: hidden; }
+
+div.jp-audio .jp-type-single ul.jp-toggles {
+  width: 25px; }
+
+div.jp-audio .jp-type-playlist ul.jp-toggles {
+  width: 55px;
+  margin: 0;
+  position: absolute;
+  left: 325px;
+  top: 50px; }
+
+ul.jp-toggles li {
+  display: block;
+  float: right; }
+
+ul.jp-toggles li a {
+  display: block;
+  width: 25px;
+  height: 18px;
+  text-indent: -9999px;
+  line-height: 100%;
+  /* need this for IE6 */ }
+
+a.jp-full-screen {
+  background: url("http://bibliotek.vimmerby.se/documents/58068/61875/jplayer.blue.monday.jpg/c0035c97-0bcb-419c-9a0c-dd4f785ef891?t=1386687713900") 0 -310px no-repeat;
+  margin-left: 20px; }
+
+a.jp-full-screen:hover {
+  background: url("http://bibliotek.vimmerby.se/documents/58068/61875/jplayer.blue.monday.jpg/c0035c97-0bcb-419c-9a0c-dd4f785ef891?t=1386687713900") -30px -310px no-repeat; }
+
+a.jp-restore-screen {
+  background: url("http://bibliotek.vimmerby.se/documents/58068/61875/jplayer.blue.monday.jpg/c0035c97-0bcb-419c-9a0c-dd4f785ef891?t=1386687713900") -60px -310px no-repeat;
+  margin-left: 20px; }
+
+a.jp-restore-screen:hover {
+  background: url("http://bibliotek.vimmerby.se/documents/58068/61875/jplayer.blue.monday.jpg/c0035c97-0bcb-419c-9a0c-dd4f785ef891?t=1386687713900") -90px -310px no-repeat; }
+
+a.jp-repeat {
+  background: url("http://bibliotek.vimmerby.se/documents/58068/61875/jplayer.blue.monday.jpg/c0035c97-0bcb-419c-9a0c-dd4f785ef891?t=1386687713900") 0 -290px no-repeat; }
+
+a.jp-repeat:hover {
+  background: url("http://bibliotek.vimmerby.se/documents/58068/61875/jplayer.blue.monday.jpg/c0035c97-0bcb-419c-9a0c-dd4f785ef891?t=1386687713900") -30px -290px no-repeat; }
+
+a.jp-repeat-off {
+  background: url("http://bibliotek.vimmerby.se/documents/58068/61875/jplayer.blue.monday.jpg/c0035c97-0bcb-419c-9a0c-dd4f785ef891?t=1386687713900") -60px -290px no-repeat; }
+
+a.jp-repeat-off:hover {
+  background: url("http://bibliotek.vimmerby.se/documents/58068/61875/jplayer.blue.monday.jpg/c0035c97-0bcb-419c-9a0c-dd4f785ef891?t=1386687713900") -90px -290px no-repeat; }
+
+a.jp-shuffle {
+  background: url("http://bibliotek.vimmerby.se/documents/58068/61875/jplayer.blue.monday.jpg/c0035c97-0bcb-419c-9a0c-dd4f785ef891?t=1386687713900") 0 -270px no-repeat;
+  margin-left: 5px; }
+
+a.jp-shuffle:hover {
+  background: url("http://bibliotek.vimmerby.se/documents/58068/61875/jplayer.blue.monday.jpg/c0035c97-0bcb-419c-9a0c-dd4f785ef891?t=1386687713900") -30px -270px no-repeat; }
+
+a.jp-shuffle-off {
+  background: url("http://bibliotek.vimmerby.se/documents/58068/61875/jplayer.blue.monday.jpg/c0035c97-0bcb-419c-9a0c-dd4f785ef891?t=1386687713900") -60px -270px no-repeat;
+  margin-left: 5px; }
+
+a.jp-shuffle-off:hover {
+  background: url("http://bibliotek.vimmerby.se/documents/58068/61875/jplayer.blue.monday.jpg/c0035c97-0bcb-419c-9a0c-dd4f785ef891?t=1386687713900") -90px -270px no-repeat; }
+
+/* @end */
+/* @group NO SOLUTION error feedback */
+.jp-no-solution {
+  padding: 5px;
+  font-size: .8em;
+  background-color: #eee;
+  border: 2px solid #009be3;
+  color: #000;
+  display: none; }
+
+.jp-no-solution a {
+  color: #000; }
+
+.jp-no-solution span {
+  font-size: 1em;
+  display: block;
+  text-align: center;
+  font-weight: bold; }
+
+/* @end */
+/* Internet Explorer-anpassningar */
+/**********************************/
+/* Internet Explorer-anpassningar */
+/**********************************/
+.ie9 #navigation {
+  /* Istället line-gradient i huvudnavigeringen */ }
+  .ie9 #navigation ul li {
+    border-bottom: 1px solid #6f0909; }
+
+.ie9 .arena-book-jacket img, .ie8 .arena-book-jacket img, .ie7 .arena-book-jacket img {
+  border: 1px solid #ddd; }
+
+.ie8 img, .ie7 img {
+  width: 100%; }
+.ie8 .footer ul, .ie7 .footer ul {
+  padding-left: 20px; }
+.ie8 div#wrapper, .ie7 div#wrapper {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd; }
+.ie8 div.banner-container div#banner .logo, .ie7 div.banner-container div#banner .logo {
+  margin-left: 20px;
+  margin-top: 20px; }
+.ie8 .headingSearchContainer, .ie7 .headingSearchContainer {
+  font-size: 24px; }
+.ie8 .externalSearchResources, .ie7 .externalSearchResources {
+  margin-top: 84px;
+  margin-left: 250px; }
+.ie8 .targetAudience, .ie7 .targetAudience {
+  right: 225px; }
+.ie8 div.arena-book-jacket img, .ie7 div.arena-book-jacket img {
+  max-width: 90px; }
+
+/*--Fix for ie7--*/
+.ie7 #navigation li.selected {
+  /*background-image:  $nav-background-selected;*/ }
+  .ie7 #navigation li.selected a {
+    /*background-image: $nav-background-selected!important;*/ }
+.ie7 #navigation li:hover {
+  /*background-image: $nav-background-hover!important;*/
+  /* Nybro-navigation */
+  /*color: #fff;*/ }
+.ie7 .aui-w20 {
+  padding: 0 20px; }
+.ie7 .aui-w60 {
+  padding: 0 10px; }
+.ie7 .portlet-column {
+  display: block; }
+.ie7 div.aui-w20 {
+  width: 170px; }
+.ie7 div.aui-w60 {
+  width: 540px; }
+
+/* Utskrifter */
+@media print {
+  @page {
+    margin: 1cm; }
+  /* Dölj allt utom huvudinnehållet */
+  .banner-container, .navmodern, #column-1, #column-3, #row-2 {
+    display: none; }
+
+  #wrapper {
+    box-shadow: none !important;
+                             /* Egentligen skulle allt annat ligga i @media screen,
+								men eftersom vi inte har tillgång till temat ... */
+    width: 100% !important; }
+
+  /* Låt huvudinnehållet fylla pappret */
+  #column-2 {
+    width: 100%;
+    border: 1px dashed; }
+
+  .portlet-boundary, .arena-record-container {
+    border: 1px dashed; }
+
+  /* Bara relevant information om mina lån */
+  #portlet_loansWicket_WAR_arenaportlets {
+    position: absolute;
+    top: 0;
+    /* Göm/visa 
+    	arena-media-class-icon
+    */ }
+    #portlet_loansWicket_WAR_arenaportlets .portlet-topper, #portlet_loansWicket_WAR_arenaportlets .arena-header-container, #portlet_loansWicket_WAR_arenaportlets .arena-select-item, #portlet_loansWicket_WAR_arenaportlets .arena-record-left, #portlet_loansWicket_WAR_arenaportlets .arena-addthis-bottom {
+      display: none; }
+    #portlet_loansWicket_WAR_arenaportlets div.arena-loan-details {
+      margin-top: -3.5em; } }
+/* Diverse fixar */
+/***********/
+/* Diverse */
+/***********/
+/* Login-portleten */
+/*--User not logged in--*/
+/*--Hide flickering of login when updating page and logged in to Liferay--*/
+html.js body.controls-visible div#main-content.columns-max div.portlet-patronLogin {
+  display: block;
+  margin: auto; }
+
+/*-Fix for top list portlet-*/
+#layout-column_column-1 .portlet-toplist .arena-book-jacket img, #layout-column_column-3 .portlet-toplist .arena-book-jacket img {
+  width: 50px; }
+#layout-column_column-1 .portlet-toplist .arena-record-details, #layout-column_column-3 .portlet-toplist .arena-record-details {
+  width: 67%;
+  max-width: 67%; }
+#layout-column_column-1 .portlet-toplist .arena-record-rating img, #layout-column_column-3 .portlet-toplist .arena-record-rating img {
+  margin: 0 -2px 0 0; }
+
+/* Liferay article toolbar fix for 2.6 */
+.article-toolbar button {
+  color: #333 !important; }
+
+.portlet-boundary:hover .portlet-topper-toolbar {
+  opacity: 1;
+  background-color: rgba(51, 51, 51, 0.6); }
+
+.portlet-topper-toolbar span {
+  height: 16px;
+  width: 16px;
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 0;
+  overflow: hidden;
+  display: inline-block;
+  margin: 3px 1px 0 1px; }
+
+.portlet-topper-toolbar a {
+  height: 16px;
+  width: 16px;
+  overflow: hidden;
+  color: #fff; }
+
+.portlet-topper-toolbar a img {
+  padding: 0;
+  height: 16px;
+  width: 16px; }
+
+.portlet-topper-toolbar {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  top: 0;
+  opacity: 0.3;
+  background-color: transparent;
+  color: #fff;
+  z-index: 200;
+  width: 100px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.taglib-header .header-back-to a {
+  margin-top: 15px; }
+
+.portlet-borderless-bar .portlet-actions {
+  float: none; }
+
+div.portlet-patronLogin div.portlet-borderless-bar ul li {
+  list-style-type: none; }
+
+.portlet-borderless-bar {
+  background-color: #333;
+  min-height: 20px;
+  margin-bottom: 5px;
+  opacity: 0.3;
+  position: relative;
+  right: 0;
+  top: 0;
+  z-index: 200;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.portlet-borderless-bar .portlet-actions {
+  margin-right: 0; }
+
+.lfr-component li img,
+img.icon {
+  vertical-align: baseline; }
+
+.lfr-actions.portlet-options .lfr-trigger strong a {
+  background-position: 0 -1px; }
+
+.portlet-topper-toolbar .portlet-close.portlet-close-icon {
+  margin-right: 5px; }
+
+div.portlet-topper-toolbar a,
+div.portlet-borderless-bar a,
+div.portlet-language a {
+  text-decoration: none; }
+
+.js .page-maximized .portlet-topper-toolbar,
+.js .page-maximized .portlet-boundary:hover .portlet-topper-toolbar {
+  opacity: 1;
+  background-color: #333;
+  color: #fff;
+  width: auto;
+  min-height: 20px; }
+
+.portlet-title-text {
+  cursor: default; }
+
+.portlet-draggable .portlet-title-text {
+  cursor: move; }
+
+/*# sourceMappingURL=vimmerby.css.map */
