@@ -31,13 +31,15 @@ module.exports = function(grunt) {
 			options: {
         		banner: '<%= banner %>'
 			},
-			files: [{
-				expand: true,
-				cwd: 'css',
-				src: ['*.css', '!*.min.css'],
-				dest: 'dist',
-				ext: '.min.css'
-			}]
+			target: {
+				files: [{
+					expand: true,
+					cwd: 'css',
+					src: ['*.css', '!*.min.css'],
+					dest: 'dist',
+					ext: '.min.css'
+				}]
+			}
 		}
 	});
 
@@ -45,15 +47,13 @@ module.exports = function(grunt) {
 	grunt.config('watch', {
 		styles: {
 			files: ['sass/**/*.scss'],
-			tasks: ['sass'],
+			tasks: ['sass','cssmin'],
 			options: {
 				spawn: false
 			}
 		}
 	});
 	
-	grunt.loadNpmTasks('grunt-debug-task');
-
 	grunt.registerTask('default',
 	"Skapar en minifierad CSS-fil", ['jshint', 'sass', 'cssmin']);
 
