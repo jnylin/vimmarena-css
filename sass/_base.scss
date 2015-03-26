@@ -44,6 +44,10 @@ img, iframe {
 	max-width: 100%;
 }
 
+iframe {
+	border: 0;
+}
+
 hr {
 	clear: both;
 	visibility: hidden;
