@@ -1,4 +1,9 @@
 .listWithDescription {
+	.arena-record-container.arena-library-record {
+		padding-top: 0.625em;
+		padding-left: 1.25em;
+	}
+
 	.arena-record-description {
 		font-size: 0.875em;
 		position: absolute;
@@ -6,6 +11,16 @@
 		top: -0.2857em;
 		width: 40%;
 	}
+
+	.arena-record-year {
+		font-size: 0.875em;
+		margin-top: 1em;
+
+		.arena-field {
+			display: none;
+		}
+	}	
+	
 }
 
 .portlet-listArticleView, .portlet-listRecordSearchResult {
@@ -45,6 +60,19 @@
 .asideArticleList {
 	.hideFromEventList {
 		display: none;
+	}
+}
+
+#column-3 {
+	.portlet-listArticleView {
+		.arena-record-container {
+			border-left: 1px solid $color-border-light;
+			border-bottom: 1px solid $color-border-light;		
+		}
+		.portlet-content {
+			padding: 0;
+			background-color: transparent !important;
+		}
 	}
 }
 
@@ -143,11 +171,6 @@ div.portlet-listRecordSearchResult {
 		font-weight: bold;
 	}
 	
-	.arena-record-container.arena-library-record {
-		padding-top: 0.625em;
-		padding-left: 1.25em;
-	}
-
 	.arena-toggle-record-list {
 		display: none;
 	}
@@ -164,14 +187,6 @@ div.portlet-listRecordSearchResult {
 		}
 	}
 
-	.arena-record-year {
-		font-size: 0.875em;
-		margin-top: 1em;
-
-		.arena-field {
-			display: none;
-		}
-	}
 }
 
 .prize {

@@ -5,9 +5,10 @@
 	}
 	
 	/* Dölj allt utom huvudinnehållet */
-	.banner-container, .navmodern, #column-1, #column-3, #row-2 {
+	.banner-container, .navmodern, #column-1, #column-3, #row-2, .arena-header-container, .arena-select-item {
 		display: none;
 	}
+	
 	
 	#wrapper {
 		box-shadow: none !important; /* Egentligen skulle allt annat ligga i @media screen,
@@ -15,16 +16,19 @@
 		width: 100% !important;
 	}
 	
+	#content-wrapper, #layout-column_column-2 {
+		padding: 0;
+	}
+	
 	/* Låt huvudinnehållet fylla pappret */
 	#column-2 {
 		width: 100%;
-		border: 1px dashed;
+		padding: 0;
+		/* border: 1px dashed; */
 	}
 	
-	
-
 	.portlet-boundary, .arena-record-container {
-		border: 1px dashed;
+		/* border: 1px dashed; */
 	}
 
 	/* Bara relevant information om mina lån */

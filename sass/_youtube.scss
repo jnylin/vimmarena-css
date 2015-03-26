@@ -1,0 +1,21 @@
+.youtube {
+	font-size: 5em;
+	
+	.fa-youtube-play {
+		color: $color-love;		
+		height: 1em;
+		width: 1em;
+		margin: auto;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: -0.625em;
+	}
+
+	.fa-youtube-play:hover {
+		color: $color-love-dark;
+		cursor: pointer;
+	}
+	
+}	
