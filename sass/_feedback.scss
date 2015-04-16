@@ -42,7 +42,7 @@ li.feedbackPanelINFO {
 }
 
 /* Varning (gul) */
-.arena-selfreg-feedback {
+.arena-selfreg-feedback, .arena-page-expired-title, .arena-page-expired-description, .arena-page-expired-link {
 	@include box;
 	@include box-warning;
 }

@@ -30,6 +30,27 @@
 	.portlet-boundary, .arena-record-container {
 		/* border: 1px dashed; */
 	}
+	
+	/* Katalogpost */
+	.arena-detail-toplinks, #extRes, .media-container, .arena-detail-right {
+		display: none;
+	}
+	
+	.arena-record-cover {
+		.values {
+			display: none;
+		}
+	}
+	
+	/* Listor */
+	.charts {
+		max-width: 80%;
+		
+		.arena-library-record {
+			page-break-inside: avoid;
+		}
+	
+	}
 
 	/* Bara relevant information om mina lån */
 	#portlet_loansWicket_WAR_arenaportlets {

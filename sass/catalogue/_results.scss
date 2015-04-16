@@ -1,4 +1,8 @@
 /* Katalogpostsidan */
+.portlet-catalogueDetail {
+	position: relative;
+}
+
 div.arena-detail-title {
 	font-size: 1.375em !important;
 }
@@ -128,12 +132,13 @@ a.arena-ehub[title~="HTML5"] {
 	display: none !important;
 }
 
-.eBook {
-	.arena-summaryLoans {
+.eBook, .eAudio {
+
+	.arena-record-publisher {
 		display: none;
 	}
-
-	.arena-availability {
+	
+	.arena-summaryLoans {
 		display: none;
 	}
 
@@ -144,6 +149,11 @@ a.arena-ehub[title~="HTML5"] {
 		margin: 1em 0 1em 0;
 		padding: 0.25em;
 	}
+
+	.arena-availability {
+		display: none;
+	}
+	
 }
 
 /* DVD */

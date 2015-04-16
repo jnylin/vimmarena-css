@@ -17,7 +17,8 @@ div.portlet-patronLogin {
 	position: absolute;
 	top: 0;
 	right: 0;
-	max-height: 9.0625em;
+	min-height: 6.8125em; /* Rutan måste kunna växa pga försenade lån */
+	/*max-height: 9.0625em;*/
 	width: 12.5em;
 	padding: 0.1875em 0.1875em;
 	/*overflow: hidden;*/

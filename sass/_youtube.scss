@@ -1,7 +1,14 @@
 .youtube {
 	font-size: 5em;
+	margin-bottom: 0.125em;	
+	position: relative;
+	max-width: 100%;
 	
-	.fa-youtube-play {
+	img {
+		width: 100%;
+	}
+	
+	.fa-youtube-play, .fa-youtube-square {
 		color: $color-love;		
 		height: 1em;
 		width: 1em;
@@ -10,12 +17,20 @@
 		top: 0;
 		right: 0;
 		bottom: 0;
-		left: -0.625em;
-	}
-
-	.fa-youtube-play:hover {
-		color: $color-love-dark;
-		cursor: pointer;
+		left: 0;
+		padding: 1.5em;
+		
+		&:hover {
+			color: $color-love-dark;
+			cursor: pointer;
+		}
 	}
 	
-}	
+}
+
+#column-2 {
+	.youtube {
+		width: 540px;
+		height: 405px;
+	}
+}

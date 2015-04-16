@@ -34,6 +34,7 @@ $padding-wrapper: 1.25rem;
 @import 'feedback';
 
 
+
 /**********/
 /* Layout */
 /**********/
@@ -88,18 +89,6 @@ $padding-wrapper: 1.25rem;
 /* Artiklar */
 @import 'articles';
 
-#column-3 {
-	.portlet-listArticleView {
-		.arena-record-container {
-			border-left: 1px solid #cdcdcd;
-			border-bottom: 1px solid #cdcdcd;		
-		}
-		.portlet-content {
-			padding: 0;
-			background-color: transparent !important;
-		}
-	}
-}
 
 /*******************************************/
 
@@ -124,17 +113,24 @@ div[itemtype="http://schema.org/Library"] {
 	div[itemprop="contactPoint"] {
 		float: left;
 	}
+	
+	.disabledAccess {
+		margin-top: 1em;
+	}
 }
 
+/* Barn- och ungagrejer */
+@import 'juvenile';
 
-/* jPlayer */
+/* Youtube och jPlayer */
+@import 'youtube';
 @import 'jplayer';
-
-/* Internet Explorer-anpassningar */
-@import 'ie';
 
 /* Utskrifter */
 @import 'print';
+
+/* Internet Explorer-anpassningar */
+@import 'ie';
 
 /* Diverse fixar */
 @import 'fixes';
