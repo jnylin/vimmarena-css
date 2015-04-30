@@ -209,19 +209,7 @@ div.portlet-patronLogin {
 /**************************************/
 /* Inköpsförslag och fjärrlåneansökan */
 /**************************************/
-/* Ändra klassbeteckning till acqSuggestionORillRequest! */
-.acqSuggestionORillRequest,.acqSuggestion {
-	iframe {
-		@include box;
-		@include box-info;
-		display: none; /* Plockas fram av javascript */
-	}
-	
-	&.portlet-externalLinks, form, iframe {
-		display: none;
-	}
-	
-}
+@import 'ill_and_acq_suggestions';
 
 /**************************/
 /* Mina sidor: omlån m.m. */

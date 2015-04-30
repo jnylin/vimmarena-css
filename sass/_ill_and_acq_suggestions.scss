@@ -1,0 +1,28 @@
+/* Ändra klassbeteckning till acqSuggestionORillRequest! */
+.illAcq {
+	iframe {
+		@include box;
+		@include box-info;
+		display: none; /* Plockas fram av javascript */
+	}
+	
+	fieldset {
+		margin-bottom: 0.5em;
+	}
+	
+	&.portlet-externalLinks, form, iframe {
+		display: none;
+	}
+	
+	@media all and (max-width: 768px) {
+		.arena-input-submit {
+			-webkit-appearance: button;
+			-moz-appearance: button;
+		}
+	}
+	
+	.clear {
+		display: none;
+	}
+	
+}
